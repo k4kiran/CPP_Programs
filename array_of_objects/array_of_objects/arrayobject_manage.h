@@ -17,12 +17,12 @@
 #include<stdio.h>
 
 #define ARR_LENGTH 20
-#define EMPLOYEE_COUNT 20
+//#define EMPLOYEE_COUNT 20
 
 using namespace std;
 /*
  * Class <CEmployee>
- * <A simple class which read and prints employee details.>
+ * <A simple class which read employee details and prints employee details based on designation.>
  * Author : Kiran Bal
  * Version : 1.0.0
  * Date : 05/07/2019
@@ -31,18 +31,18 @@ using namespace std;
 
 class CEmployee
 {
-    private:
+    public:
         string m_szEmpName;
         int m_nAge;
         string m_szDesignation;
         int m_nSalary;
 
-    public:
-        void UserInterface();
         void ReadDetails();
         void DesignationRead();
         void DisplayDetails();
 
 };
+void UserInterface();
+void Display(int, CEmployee * );
 
 #endif // EMPLOYEEDETAILS_MANAGE_H_INCLUDED

@@ -15,21 +15,21 @@ int main()
 {
     int nEmployeeCount;
     int nIterateCount = 0;
-    int nChoiceDesignation;
-    char designationAssign;
+    //int nChoiceDesignation;
+    //char designationAssign;
 
 
-    cout << "***************EMPLOYEE REGISTRATION**********************\n";
-    cout << "How many employee data you want to store ? ";
+    UserInterface();
     cin >> nEmployeeCount;
     CEmployee Employee1[nEmployeeCount];
 
     while( nIterateCount < nEmployeeCount )
-    {  //Employee1[nIterateCount].UserInterface();
-
+    {
         Employee1[nIterateCount].ReadDetails();
         Employee1[nIterateCount].DesignationRead();
-        Employee1[nIterateCount].DisplayDetails();
+        //Employee1[nIterateCount].DisplayDetails( nEmployeeCount,Employee1 );
+        nIterateCount++;
     }
+    Display(nEmployeeCount, Employee1);
 }
 
