@@ -1,3 +1,4 @@
+
 /**
  * File arrayobject_manage.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
@@ -8,45 +9,53 @@
  * Date     : 05-07-2019
  *
  */
+
 #include<string.h>
 #include "arrayobject_manage.h"
 
+// --------------------------------------------------------------
+// Method      : Display
+// Parameters  :
+//   <param 1> - <int> - Number of Employees.
+//   <param 2> - <CEmployee *> - Object of CEmployee class
+// Description : Function to Display Employee Details.
+// --------------------------------------------------------------
 
 void Display(int nCount, CEmployee *pEmployee1 )
-{
+{   cout << "\n\n********************EMPLOYEE DETAILS*************************\n";
 
     //Displaying details of programmers
     cout << "\n\n-------------------PROGRAMMERS------------------------\n";
-    cout << "NAME\tAGE\tSALARY\tDESIGNATION\n\n";
-    for( int i=0;i < nCount;i++ )
+    cout << "NAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
+    for( int nIterateValue = 0;nIterateValue < nCount;nIterateValue++ )
     {
-        if( pEmployee1[i].m_szDesignation == "Programmer" )
+        if( pEmployee1[nIterateValue].m_szDesignation == "Programmer" )
         {
-            pEmployee1[i].DisplayDetails();
+            pEmployee1[nIterateValue].DisplayDetails();
 
         }
     }
 
     //Displaying details of Data Analysts
     cout << "\n\n-------------------DATA ANALYST------------------------\n";
-    cout << "NAME\tAGE\tSALARY\tDESIGNATION\n\n";
-    for( int i=0;i < nCount;i++ )
+    cout << "NAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
+    for( int nIterateValue = 0;nIterateValue < nCount;nIterateValue++ )
     {
-        if( pEmployee1[i].m_szDesignation == "Data Analyst" )
+        if( pEmployee1[nIterateValue].m_szDesignation == "Data Analyst" )
         {
-            pEmployee1[i].DisplayDetails();
+            pEmployee1[nIterateValue].DisplayDetails();
 
         }
     }
 
     //Displaying details of Web Designers
     cout << "\n\n-------------------WEB DESIGNERS------------------------\n";
-    cout << "NAME\tAGE\tSALARY\tDESIGNATION\n\n";
-    for( int i=0;i < nCount;i++ )
+    cout << "NAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
+    for( int nIterateValue = 0;nIterateValue < nCount;nIterateValue++ )
     {
-        if( pEmployee1[i].m_szDesignation == "Web Designer" )
+        if( pEmployee1[nIterateValue].m_szDesignation == "Web Designer" )
         {
-            pEmployee1[i].DisplayDetails();
+            pEmployee1[nIterateValue].DisplayDetails();
 
         }
     }
@@ -56,12 +65,12 @@ void Display(int nCount, CEmployee *pEmployee1 )
 // Method      : ReadDetails
 // Parameters  : Nil
 // Returns     : void
-// Description : Reads employee details
+// Description : Member Function to Read employee details
 // -------------------------------------------------------
 
 void CEmployee::ReadDetails()
 {
-        cout << "Enter the name of Employee: ";
+        cout << "\nEnter the name of employee: ";
         getchar();
         getline(cin, m_szEmpName);
         cout << "Enter age of employee: ";
@@ -70,15 +79,22 @@ void CEmployee::ReadDetails()
         cin >> m_nSalary;
  }
 
+// -------------------------------------------------------
+// Method      : DesignationRead
+// Parameters  : Nil
+// Returns     : void
+// Description : Member function of class to read employee designation.
+// -------------------------------------------------------
+
  void CEmployee::DesignationRead()
  {
-        int nChoiceDesignation;//remove
+        int nChoiceDesignation;
+        cout << "\n****************Designation List***************\n";
         cout << "1.Programmer\n2.Data Analyst\n3.Web Designer\n";
-        cout << "Choose Designation From The Menu: ";
+        cout << "Choose designation from The menu: ";
         cin >> nChoiceDesignation;
         switch(nChoiceDesignation)
         {
-
             case 1:
                 m_szDesignation = "Programmer";
                 break;
@@ -92,9 +108,8 @@ void CEmployee::ReadDetails()
                 break;
 
             default:
-                cout << "\nInvalid Character";
+                cout << "\nPlease enter valid option from the menu";
         }
-
  }
 
 // -------------------------------------------------------
@@ -106,24 +121,23 @@ void CEmployee::ReadDetails()
 
 void CEmployee::DisplayDetails()
 {
-
-    /*Display( nCount,Employee1 );
-    cout << "\nName: " << m_szEmpName;
-    cout << "\nAge: " << m_nAge;
-    cout << "\nDesignation: " << m_szDesignation;
-    cout << "\nSalary: " << m_nSalary <<"\n";
-*/
-    cout << m_szEmpName <<"\t";
+    cout << m_szEmpName << "\t\t";
     cout << m_nAge << "\t";
-    cout << m_nSalary <<"\t";
-    cout << m_szDesignation <<"\n";
+    cout << m_nSalary << "\t\t";
+    cout << m_szDesignation << "\n";
 }
 
+// -------------------------------------------------------
+// Method      : UserInterface
+// Parameters  : Nil
+// Returns     : void
+// Description : Function to print UserInterface
+// -------------------------------------------------------
 
 void UserInterface()
-
 {
-    cout << "***************EMPLOYEE REGISTRATION**********************\n";
-    cout << "How many employee data you want to store ? ";
-
+    cout << "**************************************\tEMPLOYEE REGISTRATION\t********************************\n";
+    cout << "\nThis program lets you store employee details and display based on the designation\n";
+    cout << "-------------------------------------------------------------------------------------\n";
+    cout << "\nHow many employee data you want to store ? ";
 }

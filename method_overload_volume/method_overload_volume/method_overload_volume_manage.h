@@ -18,15 +18,19 @@
 #include <iostream>
 
 using namespace std;
+class VolumeOfShapes
+{
+private:
 
-
-
+public:
+    void CubeVolume();
+    void PrismVolume();
+    void PyramidVolume();
+};
 float Volume( int, int );
 float Volume( int );
 float Volume( int, int, int );
-void CubeVolume();
-void PrismVolume();
-void PyramidVolume();
+
 
 #endif // FUNC_MANAGE_H_INCLUDED
 

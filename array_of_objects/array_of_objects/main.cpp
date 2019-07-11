@@ -1,7 +1,8 @@
+
 /**
- * File employeedetails_manage.cpp - Copyright (C) <2019>
+ * File main.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
- * This file contains the main function of the employeedetails program.
+ * This file contains the main function of the arrayobect_manage program.
  *
  * Author   : Kiran Bal
  * Version  : 1.0.0
@@ -15,21 +16,18 @@ int main()
 {
     int nEmployeeCount;
     int nIterateCount = 0;
-    //int nChoiceDesignation;
-    //char designationAssign;
-
 
     UserInterface();
     cin >> nEmployeeCount;
+    cout << "You can enter details of " << nEmployeeCount << " employees\n\n";
     CEmployee Employee1[nEmployeeCount];
-
     while( nIterateCount < nEmployeeCount )
     {
+        cout << "\nDetails of employee " << nIterateCount + 1 << "\n";
         Employee1[nIterateCount].ReadDetails();
         Employee1[nIterateCount].DesignationRead();
-        //Employee1[nIterateCount].DisplayDetails( nEmployeeCount,Employee1 );
         nIterateCount++;
     }
-    Display(nEmployeeCount, Employee1);
+    Display( nEmployeeCount, Employee1 );
 }
 

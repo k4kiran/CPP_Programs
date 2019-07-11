@@ -1,3 +1,4 @@
+
 /**
  * File ararayobject_manage.h - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
@@ -17,7 +18,6 @@
 #include<stdio.h>
 
 #define ARR_LENGTH 20
-//#define EMPLOYEE_COUNT 20
 
 using namespace std;
 /*
@@ -31,18 +31,19 @@ using namespace std;
 
 class CEmployee
 {
-    public:
+    private:
         string m_szEmpName;
         int m_nAge;
         string m_szDesignation;
         int m_nSalary;
-
+    public:
         void ReadDetails();
         void DesignationRead();
         void DisplayDetails();
+        friend void Display(int, CEmployee * );
 
 };
 void UserInterface();
-void Display(int, CEmployee * );
+
 
 #endif // EMPLOYEEDETAILS_MANAGE_H_INCLUDED
