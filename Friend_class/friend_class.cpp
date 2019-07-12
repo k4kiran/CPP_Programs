@@ -7,13 +7,13 @@ private:
    char ch='A';
    int num = 11;
 public:
-   friend class ABC;
+    friend class ABC;
 };
 class ABC {
 public:
-   void disp(XYZ obj){
-      cout<<obj.ch<<endl;
-      cout<<obj.num<<endl;
+   void disp(XYZ obj1){
+      cout<<obj1.ch<<endl;
+      cout<<obj1.num<<endl;
    }
 };
 int main() {

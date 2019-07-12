@@ -20,9 +20,8 @@ public:
         cout << szName << endl;
         cout << nAge << endl;
     }
-    friend void display(Student man);
+     friend void display(Student man);
 };
-
 
 void display(Student man)
 {
@@ -32,7 +31,7 @@ void display(Student man)
 
 int main()
 {
-    Student man1("akhil", 23);
-    display(man1);
+    Student man("akhil", 23);
+    display(man);
     return 0;
 }
