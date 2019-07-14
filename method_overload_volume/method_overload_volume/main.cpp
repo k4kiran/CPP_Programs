@@ -16,6 +16,7 @@
 int main()
 {
 	int nChoice;
+	VolumeOfShapes shape;
     do
     {
 		//interface for the user
@@ -25,13 +26,13 @@ int main()
         switch(nChoice)
         {
 		case 1:
-			CubeVolume();
+			shape.CubeVolume();
             break;
         case 2:
-			PrismVolume();
+			shape.PrismVolume();
             break;
         case 3:
-			PyramidVolume();
+			shape.PyramidVolume();
             break;
         default:
 			cout <<"\n invalid character\n";

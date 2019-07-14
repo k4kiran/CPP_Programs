@@ -12,12 +12,8 @@
 
 #include "method_overload_volume_manage.h"
 
-float fResult;
-int nChoice;
-int nRadius;
-int nLengthInput;
-int nBreadthInput;
-int nHeightInput;
+
+
 
 // -------------------------------------------------------
 // Method      : Volume
@@ -28,7 +24,7 @@ int nHeightInput;
 // Description : Returns the Volume of Prism.
 // -------------------------------------------------------
 
-float Volume( /*IN*/ float fLength, /*IN*/ float fBreadth, /*IN*/ float fHeight )
+float VolumeOfShapes::Volume( /*IN*/ float fLength, /*IN*/ float fBreadth, /*IN*/ float fHeight )
 {
     float fVolumePrism;
     fVolumePrism = fLength * fBreadth * fHeight;
@@ -43,7 +39,7 @@ float Volume( /*IN*/ float fLength, /*IN*/ float fBreadth, /*IN*/ float fHeight 
 // Description : Returns the Volume of Cube.
 // -------------------------------------------------------
 
-float Volume( /*IN*/ float fLength )
+float VolumeOfShapes::Volume( /*IN*/ float fLength )
 {
     float fVolumeCube;
     fVolumeCube = fLength * fLength * fLength;
@@ -60,10 +56,10 @@ float Volume( /*IN*/ float fLength )
 // Description : Returns the Volume of Pyramid.
 // -------------------------------------------------------
 
-float Volume( /*IN*/ int nLength, /*IN*/ int nHeight )
+float VolumeOfShapes::Volume( /*IN*/ float fLength, /*IN*/ float fHeight )
 {
     float fVolumePyramid;
-    fVolumePyramid = (1/3) * nLength * nHeight;
+    fVolumePyramid = (1/3) * fLength * fHeight;
     return fVolumePyramid;
 }
 
@@ -74,9 +70,9 @@ float Volume( /*IN*/ int nLength, /*IN*/ int nHeight )
 // Description : Displays the Volume of Cube.
 // -------------------------------------------------------
 
-void CubeVolume()
+void VolumeOfShapes::CubeVolume()
 {
-    float nSide1;
+
     cout << "Enter Length of cube: ";
     cin  >> nSide1;
 
@@ -92,11 +88,9 @@ void CubeVolume()
 // Description : Displays the Volume of Prism.
 // -------------------------------------------------------
 
-void PrismVolume()
+void VolumeOfShapes::PrismVolume()
 {
-    float fLengthPrism;
-    float fBreadthPrism;
-    float fHeightPrism;
+
 
     cout << "\nEnter length of prism: ";
     cin >> fLengthPrism;
@@ -117,10 +111,9 @@ void PrismVolume()
 // Description : Displays the Volume of Pyramid.
 // -------------------------------------------------------
 
-void PyramidVolume()
+void VolumeOfShapes::PyramidVolume()
 {
-    float fBaseLength;
-    float fHeightPyramid;
+
     cout << "\nEnter base length of Pyramid: ";
     cin >> fBaseLength;
     cout << "\nEnter the height of pyramid: ";

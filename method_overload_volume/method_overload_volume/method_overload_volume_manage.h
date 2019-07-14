@@ -21,15 +21,25 @@ using namespace std;
 class VolumeOfShapes
 {
 private:
+    float fResult;
+    float nSide1;
+    float fLengthPrism;
+    float fBreadthPrism;
+    float fHeightPrism;
+    float fBaseLength;
+    float fHeightPyramid;
 
 public:
+    float Volume( float, float );
+    float Volume( float );
+    float Volume( float, float, float );
     void CubeVolume();
     void PrismVolume();
     void PyramidVolume();
+
 };
-float Volume( int, int );
-float Volume( int );
-float Volume( int, int, int );
+
+
 
 
 #endif // FUNC_MANAGE_H_INCLUDED
