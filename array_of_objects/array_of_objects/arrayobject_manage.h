@@ -40,7 +40,7 @@ class CEmployee
         void ReadDetails();
         void DesignationRead();
         void DisplayDetails();
-        friend void Display(int, CEmployee * );
+        void Display(int , CEmployee );
 
 };
 void UserInterface();

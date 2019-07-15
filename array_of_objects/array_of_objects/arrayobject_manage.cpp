@@ -20,8 +20,8 @@
 //   <param 2> - <CEmployee *> - Object of CEmployee class
 // Description : Function to Display Employee Details.
 // --------------------------------------------------------------
-
-void Display(int nCount, CEmployee *pEmployee1 )
+/*
+void CEmployee::Display(int nCount, CEmployee pEmployee1 )
 {   cout << "\n\n********************EMPLOYEE DETAILS*************************\n";
 
     //Displaying details of programmers
@@ -61,6 +61,7 @@ void Display(int nCount, CEmployee *pEmployee1 )
     }
 }
 
+*/
 // -------------------------------------------------------
 // Method      : ReadDetails
 // Parameters  : Nil
@@ -112,20 +113,7 @@ void CEmployee::ReadDetails()
         }
  }
 
-// -------------------------------------------------------
-// Method      : DisplayDetails
-// Parameters  : Nil
-// Returns     : void
-// Description : Displays employee details
-// -------------------------------------------------------
 
-void CEmployee::DisplayDetails()
-{
-    cout << m_szEmpName << "\t\t";
-    cout << m_nAge << "\t";
-    cout << m_nSalary << "\t\t";
-    cout << m_szDesignation << "\n";
-}
 
 // -------------------------------------------------------
 // Method      : UserInterface

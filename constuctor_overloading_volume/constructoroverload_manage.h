@@ -12,21 +12,33 @@
  *
  */
 
-#ifndef FUNC_MANAGE_H_INCLUDED
-#define FUNC_MANAGE_H_INCLUDED
 
 #include <iostream>
-
 using namespace std;
 
-int Area( int, int );
-float Area( int );
-float Area( int, int, int );
-void CircleArea();
-void RectangleArea();
-void TriangleArea();
+class COverloadVolume
+{
+    private:
+        float m_fLengthCube;
+        float m_fLengthPyramid;
+        float m_fBreadthPyramid;
+        float m_fLengthPrism;
+        float m_fBreadthPrism;
+        float m_fHeightPrism;
+        float m_fVolume;
 
-#endif // FUNC_MANAGE_H_INCLUDED
+    public:
+        COverloadVolume( float  );
+        COverloadVolume( float , float);
+        COverloadVolume( float , float , float );
+        void display();
+};
+        void VolumeCube();
+        void VolumePyramid();
+        void VolumePrism();
+        void UserInterface();
 
 
 #endif // CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
+
+

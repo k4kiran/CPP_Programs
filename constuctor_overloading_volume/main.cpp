@@ -1,4 +1,5 @@
-
+//add units
+//add coding guidelines
 /**
  * File main.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
@@ -11,30 +12,10 @@
  */
 #include "constructoroverload_manage.h"
 
+
 int main()
 {
-	int nChoice;
-    do
-    {
-		//interface for the user
-        cout << "\n\n**************************MENU******************\n";
-        cout <<"1.CIRCLE\n2.RECTANGLE\n3.TRIANGLE\nEnter your choice: ";
-        cin >> nChoice;
-        switch(nChoice)
-        {
-		case 1:
-			CircleArea();
-            break;
-        case 2:
-			RectangleArea();
-            break;
-        case 3:
-			TriangleArea();
-            break;
-        default:
-			cout <<"\n invalid character\n";
-        }
-    }while(nChoice != 0 );
+    UserInterface();
 	return 0;
 }
 
