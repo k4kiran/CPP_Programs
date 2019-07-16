@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1562567155 source:d:\users\kiran_bal\work\training_codes\array_of_objects\employeedetails_manage.cpp
-	"employeedetails_manage.h"
-
-1562567250 d:\users\kiran_bal\work\training_codes\array_of_objects\employeedetails_manage.h
-	<iostream>
-

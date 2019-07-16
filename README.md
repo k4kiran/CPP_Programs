@@ -1,1 +1,0 @@
-# Triassic_solutions
