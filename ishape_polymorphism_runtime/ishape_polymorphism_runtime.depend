@@ -32,3 +32,23 @@
 	<iostream>
 	"CTriangle.h"
 
+1563293832 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\ccircle.cpp
+	"CCircle.h"
+
+1563293832 d:\triassic_solutions\ishape_polymorphism_runtime\include\ccircle.h
+
+1563293832 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\cishape.cpp
+	"CIShape.h"
+
+1563303322 d:\triassic_solutions\ishape_polymorphism_runtime\include\cishape.h
+	<iostream>
+	<stdlib.h>
+	"CTriangle.h"
+
+1563301985 d:\triassic_solutions\ishape_polymorphism_runtime\include\ctriangle.h
+	"CIShape.h"
+	"CInterface.h"
+
+1563302620 d:\triassic_solutions\ishape_polymorphism_runtime\include\cinterface.h
+	"CIShape.h"
+

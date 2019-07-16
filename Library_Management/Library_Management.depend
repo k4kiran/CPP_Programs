@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1561716410 source:d:\code_blocks\library_management\lmanage.cpp
+	"lmanage.h"
+
+1561707365 d:\code_blocks\library_management\lmanage.h
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
+
+1561716404 source:d:\code_blocks\library_management\main.cpp
+	"lmanage.h"
+
+1561716690 source:d:\triassic_solutions\library_management\lmanage.cpp
+	"lmanage.h"
+
+1561707366 d:\triassic_solutions\library_management\lmanage.h
+	<iostream>
+	<fstream>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
+
+1561716406 source:d:\triassic_solutions\library_management\main.cpp
+	"lmanage.h"
+

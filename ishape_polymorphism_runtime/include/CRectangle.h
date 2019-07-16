@@ -2,15 +2,14 @@
 #define CRECTANGLE_H
 
 
-class CRectangle
+class CRectangle : public CIshape
 {
-    public:
-        CRectangle();
-        virtual ~CRectangle();
-
-    protected:
-
-    private:
+  private:
+    float m_fLength;
+    float m_fBreadth;
+    float m_fAreaRectangle;
+  public:
+    void ReadData();
+    void DrawShape();
 };
-
 #endif // CRECTANGLE_H

@@ -5,13 +5,9 @@
 
 class CInterface
 {
-    public:
-       void UserInterface();
-       void ReadDetails( int );
-    protected:
-
-    private:
-        CIShape *pShapePtr;
+public:
+    void UserInterface();
+    void ReadDetails( int );
 };
 
 #endif // CINTERFACE_H

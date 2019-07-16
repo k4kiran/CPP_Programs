@@ -1,16 +1,15 @@
 #ifndef CCIRCLE_H
 #define CCIRCLE_H
 
+#include "CIShape.h"
 
-class CCircle
+class CCircle : public CIshape
 {
-    public:
-        CCircle();
-        virtual ~CCircle();
-
-    protected:
-
-    private:
+  private:
+    float m_fRadius;
+    float m_fAreaCircle;
+  public:
+    void ReadData();
+    void DrawShape();
 };
-
 #endif // CCIRCLE_H

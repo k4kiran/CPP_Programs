@@ -21,14 +21,14 @@ using namespace std;
 class CComplex
 {
 private:
-    int m_nReal;
-    int m_nImag;
+    float m_fReal;
+    float m_fImag;
 
 public:
 
     CComplex(const CComplex &);
     CComplex(void);
-    CComplex(int, int);
+    CComplex(float, float);
     CComplex operator + (CComplex const & );
     void DisplayValue();
     void FormatPrint(CComplex, CComplex);

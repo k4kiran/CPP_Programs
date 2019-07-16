@@ -2,21 +2,17 @@
 #define CISHAPE_H
 
 #include <iostream>
+#include <stdlib.h>
+#define LENGTH 20
 #include "CTriangle.h"
 
 using namespace std;
 
-class CIShape
+class CIshape
 {
     public:
-        virtual ~CIShape()
-        {
-            cout<<"Destructor";
-        }
-        virtual void ReadData() = 0;
-        virtual void DrawShape() =0;
-
-    private:
+      virtual void ReadData()=0;
+      virtual void DrawShape()=0;
 };
 
 

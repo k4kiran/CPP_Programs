@@ -1,24 +1,18 @@
 #include "CTriangle.h"
 
-CTriangle::CTriangle()
-{
-    m_fBase = 0;
-    m_fHeight = 0;
-    m_fArea = 0;
-}
-
-
 void CTriangle::ReadData()
-{
-    cout << "\nSelected shape is Triangle";
-    cout << "\nPlease enter the base of triangle: ";
-    cin >> m_fBase;
-    cout << "\nPlease enter the height of triangle: ";
-    cin >> m_fHeight;
-    m_fArea = m_fBase * m_fHeight;
-}
+   {
+       cout << "\nEnter the dimensions of Triangle:";
+       cout << "\nBase = ";
+       cin >> m_fBase;
+       cout << "Height = ";
+       cin >> m_fHeight;
 
-void CTriangle::DrawShape()
-{
- cout << "Drawing Triangle Of Area";
-}
+   }
+
+    void CTriangle::DrawShape()
+   {
+       m_fAreaTriangle = (m_fBase * m_fHeight)/2;
+       cout << "\nDrawing the Triangle with area   ";
+       cout << m_fAreaTriangle;
+   }

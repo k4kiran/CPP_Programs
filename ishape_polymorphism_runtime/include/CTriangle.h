@@ -4,23 +4,14 @@
 #include "CIShape.h"
 #include "CInterface.h"
 
-
-class CTriangle:public CIShape
+class CTriangle : public CIshape
 {
-     public:
-        CTriangle();
-
-        virtual ~CTriangle()
-        {
-            //no body
-        void ReadData();
-        void DrawShape();
-
-    private:
-        float m_fBase;
-        float m_fHeight;
-        float m_fArea;
+  private:
+    float m_fBase;
+    float m_fHeight;
+    float m_fAreaTriangle;
+  public:
+    void ReadData();
+    void DrawShape();
 };
-
-
 #endif // CTRIANGLE_H

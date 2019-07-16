@@ -18,57 +18,55 @@ CComplex::CComplex( void )
     //unimplemented
 }
 
-CComplex::CComplex(int nReal, int nImag)
+CComplex::CComplex( float fReal, float fImag)
 {
-    m_nReal = nReal;
-    m_nImag = nImag;
+    m_fReal = fReal;
+    m_fImag = fImag;
 }
 
 
 CComplex CComplex::operator + (CComplex const &OperatorObject)
 {
     CComplex TempObject;
-    TempObject.m_nReal = m_nReal + OperatorObject.m_nReal;
-    TempObject.m_nImag = m_nImag + OperatorObject.m_nImag;
+    TempObject.m_fReal = m_fReal + OperatorObject.m_fReal;
+    TempObject.m_fImag = m_fImag + OperatorObject.m_fImag;
     return TempObject;
 }
 void  CComplex::DisplayValue()
 {
-    cout << "Result is: " << m_nReal<<" + "<<m_nImag<<"i\n";
+    cout << "Result is: " << m_fReal<<" + "<<m_fImag<<"i\n";
 }
 
 void ReadDetails()
 
-{   int nRealPart,nImagPart;
+{   float fRealPart,fImagPart;
     CComplex CPrint;
     cout <<  "Enter the real part of first object: ";
-    cin >> nRealPart;
+    cin >> fRealPart;
     cout << "\nEnter the Imaginary Part of first object: ";
-    cin >> nImagPart;
-    CComplex ComplexAdd1(nRealPart, nImagPart);
-    cout << "\nEntered complex number: " << nRealPart <<" + " << nImagPart << "i";
+    cin >> fImagPart;
+    CComplex ComplexAdd1(fRealPart, fImagPart);
+    cout << "\nEntered complex number: " << fRealPart <<" + " << fImagPart << "i";
 
     cout <<  "\nEnter the real part of second object: ";
-    cin >> nRealPart;
+    cin >> fRealPart;
     cout << "\nEnter the Imaginary Part of second object: ";
-    cin >> nImagPart;
-    CComplex ComplexAdd2(nRealPart, nImagPart );
-    cout << "\nEntered complex number: " << nRealPart <<" + " << nImagPart << "i\n\n";
+    cin >> fImagPart;
+    CComplex ComplexAdd2(fRealPart, fImagPart );
+    cout << "\nEntered complex number: " << fRealPart <<" + " << fImagPart << "i\n\n";
     //CPrint.FormatPrint(ComplexAdd1,ComplexAdd2);
     CComplex ComplexAddResult = ComplexAdd1 + ComplexAdd2;
     ComplexAddResult.DisplayValue();
-
-
 }
 void CComplex::FormatPrint(CComplex ComplexAdd1,CComplex ComplexAdd2)
 {
    // CComplex ComplexAdd1,ComplexAdd2;
     CComplex ComplexAddResult = ComplexAdd1 + ComplexAdd2;
-    cout<<setw(5)<<ComplexAdd1.m_nReal<<" + "<<ComplexAdd1.m_nImag<<"i";
+    cout<<setw(5)<<ComplexAdd1.m_fReal<<" + "<<ComplexAdd1.m_fImag<<"i";
     cout<<" +\n";
-    cout<<setw(5)<<ComplexAdd2.m_nReal<<" + "<<ComplexAdd2.m_nImag<<"i";
+    cout<<setw(5)<<ComplexAdd2.m_fReal<<" + "<<ComplexAdd2.m_fImag<<"i";
     cout<<"\n----------\n";
-    cout<<setw(5)<<ComplexAddResult.m_nReal<<" + "<<ComplexAddResult.m_nImag<<"i\n";
+    cout<<setw(5)<<ComplexAddResult.m_fReal<<" + "<<ComplexAddResult.m_fImag<<"i\n";
     ComplexAddResult.DisplayValue();
 
 }

@@ -1,5 +1,3 @@
-#ifndef CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
-#define CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
 
 /**
  * File func_manage.h - Copyright (C) <2019>
@@ -12,8 +10,10 @@
  *
  */
 
-
+#ifndef CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
+#define CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
 #include <iostream>
+
 using namespace std;
 
 class COverloadVolume
@@ -31,14 +31,12 @@ class COverloadVolume
         COverloadVolume( float  );
         COverloadVolume( float , float);
         COverloadVolume( float , float , float );
-        void display();
+        void Display();
 };
-        void VolumeCube();
-        void VolumePyramid();
-        void VolumePrism();
-        void UserInterface();
-
-
+void VolumeCube();
+void VolumePyramid();
+void VolumePrism();
+void UserInterface();
 #endif // CONSTRUCTOROVERLOAD_MANAGE_H_INCLUDED
 
 

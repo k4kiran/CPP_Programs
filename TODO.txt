@@ -1,0 +1,4 @@
+change operator oveloading to functions
+add coding standards in all programs
+avoid for loop in array of objects
+resolve error in ishape
