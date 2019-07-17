@@ -49,12 +49,12 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
 
 void CEmployee::ReadDetails()
 {
-        cout << "\nEnter the name of employee: ";
+        cout << "\nName : ";
         getchar();
         getline(cin, m_szEmpName);
-        cout << "Enter age of employee: ";
+        cout << "Age:(18-35) : ";
         cin >> m_nAge;
-        cout << "Enter the salary: ";
+        cout << "Salary : ";
         cin >> m_nSalary;
  }
 
@@ -68,9 +68,10 @@ void CEmployee::ReadDetails()
  void CEmployee::DesignationRead()
  {
         int nChoiceDesignation;
-        cout << "\n****************Designation List***************\n";
+        cout << "\nDesignation List\n";
+        cout << "-----------------\n\n";
         cout << "1.Programmer\n2.Data Analyst\n3.Web Designer\n";
-        cout << "Choose designation from The menu: ";
+        cout << "Choose designation from The menu: (1,2 or 3) : ";
         cin >> nChoiceDesignation;
         switch(nChoiceDesignation)
         {

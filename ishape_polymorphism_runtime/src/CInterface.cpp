@@ -13,15 +13,15 @@ void CInterface::UserInterface()
         cout << "\n2.Circle";
         cout << "\n3.Rectangle";
         cout << "\n4.Draw selected shapes";
-        cout << "\nPlease choose an option by providing an input as number(0,1,2,3 or 4):  ";
+        cout << "\nEnter your choice from the above menu :  ";
         cin >> nShapeChoice;
         ReadDetails( nShapeChoice );
 }
 
 void CInterface::ReadDetails( /*IN*/ int nChoice )
        {
-           int nCount = 0;
-          CIshape *Data[LENGTH];
+            int nCount = 0;
+          CIShape *Shapes[LENGTH];
           switch( nChoice )
          {
            case 0:
@@ -31,30 +31,30 @@ void CInterface::ReadDetails( /*IN*/ int nChoice )
 
           case 1:
                 cout << "\nSelected shape is Triangle";
-                Data[nCount] = new CTriangle;
-                Data[nCount]->ReadData();
+                Shapes[nCount] = new CTriangle;
+                Shapes[nCount]->ReadData();
                 nCount++;
                 break;
 
          case 2:
                 cout << "\nSelected shape is Circle";
-                Data[nCount] = new CCircle;
-                Data[nCount]->ReadData();
+                Shapes[nCount] = new CCircle;
+                Shapes[nCount]->ReadData();
                 nCount++;
                 break;
 
          case 3:
                 cout << "\nSelected shape is Rectangle";
-                Data[nCount] = new CRectangle;
-                Data[nCount]->ReadData();
+                Shapes[nCount] = new CRectangle;
+                Shapes[nCount]->ReadData();
                 nCount++;
                 break;
 
          case 4:
                 cout << "\nDraw selected shapes";
-                for( int nInCount = 0; nInCount < nCount; nInCount++ )
+                for( int nDrawCount = 0; nDrawCount < nCount; nDrawCount++ )
                 {
-                    Data[nInCount]->DrawShape();
+                    Shapes[nDrawCount]->DrawShape();
                     cout << endl << endl;
                 }
                 break;

@@ -2,12 +2,12 @@
 #define CRECTANGLE_H
 
 
-class CRectangle : public CIshape
+class CRectangle : public CIShape
 {
   private:
     float m_fLength;
     float m_fBreadth;
-    float m_fAreaRectangle;
+    float m_fRectangleArea;
   public:
     void ReadData();
     void DrawShape();

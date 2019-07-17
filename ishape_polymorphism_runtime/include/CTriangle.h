@@ -4,12 +4,12 @@
 #include "CIShape.h"
 #include "CInterface.h"
 
-class CTriangle : public CIshape
+class CTriangle : public CIShape
 {
   private:
     float m_fBase;
     float m_fHeight;
-    float m_fAreaTriangle;
+    float m_fTriangleArea;
   public:
     void ReadData();
     void DrawShape();

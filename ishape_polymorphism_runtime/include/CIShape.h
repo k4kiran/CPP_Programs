@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class CIshape
+class CIShape
 {
     public:
       virtual void ReadData()=0;

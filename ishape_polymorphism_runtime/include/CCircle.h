@@ -3,11 +3,11 @@
 
 #include "CIShape.h"
 
-class CCircle : public CIshape
+class CCircle : public CIShape
 {
   private:
     float m_fRadius;
-    float m_fAreaCircle;
+    float m_fCircleArea;
   public:
     void ReadData();
     void DrawShape();

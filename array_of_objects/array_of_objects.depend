@@ -30,3 +30,18 @@
 1563344491 d:\users\kiran_bal\work\git\t0588\array_of_objects\cinterface.h
 	"arrayobject_manage.h"
 
+1563344726 source:d:\users\kiran_bal\work\git\triassic_solutions\array_of_objects\cinterface.cpp
+	"CInterface.h"
+
+1563344491 d:\users\kiran_bal\work\git\triassic_solutions\array_of_objects\cinterface.h
+	"arrayobject_manage.h"
+
+1563344190 d:\users\kiran_bal\work\git\triassic_solutions\array_of_objects\arrayobject_manage.h
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1563344803 source:d:\users\kiran_bal\work\git\triassic_solutions\array_of_objects\main.cpp
+	"arrayobject_manage.h"
+	"CInterface.h"
+
