@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1563357247 source:d:\users\kiran_bal\work\git\triassic_solutions\bank_account_class\main.cpp
+	"CBankAccount_manage.h"
+	"CSavingsAccount_manage.h"
+
+1563356431 d:\users\kiran_bal\work\git\triassic_solutions\bank_account_class\cbankaccount_manage.h
+	<iostream>
+
+1563356583 source:d:\users\kiran_bal\work\git\triassic_solutions\bank_account_class\cbankaccount_manage.cpp
+	<iostream>
+	"CBankAccount_manage.h"
+
+1563356011 source:d:\users\kiran_bal\work\git\triassic_solutions\bank_account_class\csavingsaccount_manage.cpp
+	"CSavingsAccount_manage.h"
+
+1563357520 d:\users\kiran_bal\work\git\triassic_solutions\bank_account_class\csavingsaccount_manage.h
+	"CBankAccount_manage.h"
+
