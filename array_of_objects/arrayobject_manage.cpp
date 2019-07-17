@@ -6,7 +6,7 @@
  *
  * Author   : Kiran Bal
  * Version  : 1.0.0
- * Date     : 05-07-2019
+ * Date     : 09-07-2019
  *
  */
 
@@ -26,6 +26,10 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
                 pEmployee2[i +1] = pEmployee2[i];
                 pEmployee2[i] = TempObject;
             }
+            else
+            {
+                //unimplemented
+            }
 
         }
     }
@@ -36,7 +40,6 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
     {
 
         DisplayDetails( pEmployee2, i );
-
     }
 }
 

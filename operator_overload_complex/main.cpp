@@ -1,5 +1,5 @@
-//change all types to float
-//try to format the result in multiple functions
+
+//change names in all comments.
 /**
  * File main.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
@@ -18,7 +18,8 @@ using namespace std;
 
 int main()
 {
-    ReadDetails();
+   UserInterface();
+   AddComplex();
 
     return 0;
 }

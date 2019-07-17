@@ -32,6 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CBankAccount_manage.cpp" />
+		<Unit filename="CBankAccount_manage.h" />
+		<Unit filename="CCurrentAccount_manage.cpp" />
+		<Unit filename="CCurrentAccount_manage.h" />
+		<Unit filename="CInterface_manage.cpp" />
+		<Unit filename="CInterface_manage.h" />
+		<Unit filename="CSavingsAccount_manage.cpp" />
+		<Unit filename="CSavingsAccount_manage.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

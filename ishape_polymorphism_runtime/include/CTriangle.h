@@ -1,7 +1,6 @@
 #ifndef CTRIANGLE_H
 #define CTRIANGLE_H
 
-#include "CIShape.h"
 #include "CInterface.h"
 
 class CTriangle : public CIShape

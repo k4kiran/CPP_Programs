@@ -31,11 +31,12 @@ public:
     CComplex(float, float);
     CComplex operator + (CComplex const & );
     void DisplayValue();
-    void FormatPrint(CComplex, CComplex);
+    //void FormatPrint(CComplex *, CComplex *);
 
 };
 
-void ReadDetails();
+void AddComplex();
+void UserInterface();
 
 
 

@@ -1,7 +1,7 @@
 #ifndef CINTERFACE_H
 #define CINTERFACE_H
 
-#include "CInterface.h"
+
 #include "CCircle.h"
 #include "CRectangle.h"
 #include "CTriangle.h"

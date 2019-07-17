@@ -1,7 +1,7 @@
 #ifndef CCIRCLE_H
 #define CCIRCLE_H
 
-#include "CIShape.h"
+#include "CInterface.h"
 
 class CCircle : public CIShape
 {

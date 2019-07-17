@@ -25,10 +25,11 @@ void COverloadVolume::Display()
 }
 
 // -------------------------------------------------------
-// Method      : COverloadVolume
-// Parameters  : Nil
+// Method      : Constructor
+// Parameters  :
+//    <param 1> - <float> - first side of shape.
 // Returns     : void
-// Description : Consrtuctor
+// Description : single argument constructor to initialize side of cube.
 // -------------------------------------------------------
 
 COverloadVolume::COverloadVolume( /*IN*/ float fSide1 )
@@ -38,11 +39,14 @@ COverloadVolume::COverloadVolume( /*IN*/ float fSide1 )
 }
 
 // -------------------------------------------------------
-// Method      : CreateBook
-// Parameters  : Nil
+// Method      : Constructor
+// Parameters  :
+//    <param 1> - <float> - first side of shape.
+//    <param 2> - <float> - second side of shape.
 // Returns     : void
-// Description : Member function to create new book entry
+// Description : Two argument constructor to initialize sides of pyramid.
 // -------------------------------------------------------
+
 COverloadVolume::COverloadVolume( /*IN*/ float fSide1, /*IN*/ float fSide2)
 {
     m_fLengthPyramid = fSide1;
@@ -50,10 +54,13 @@ COverloadVolume::COverloadVolume( /*IN*/ float fSide1, /*IN*/ float fSide2)
     m_fVolume = (fSide1 * fSide2)/3;
 }
 // -------------------------------------------------------
-// Method      : CreateBook
-// Parameters  : Nil
+// Method      : Constructor
+// Parameters  :
+//    <param 1> - <float> - first side of shape.
+//    <param 2> - <float> - second side of shape.
+//    <param 3> - <float> - third side of shape.
 // Returns     : void
-// Description : Member function to create new book entry
+// Description : Three argument constructor to initialize sides of prism.
 // -------------------------------------------------------
 
 COverloadVolume::COverloadVolume( /*IN*/ float fSide1, /*IN*/ float fSide2, /*IN*/ float fSide3 )
@@ -65,10 +72,10 @@ COverloadVolume::COverloadVolume( /*IN*/ float fSide1, /*IN*/ float fSide2, /*IN
 }
 
 // -------------------------------------------------------
-// Method      : CreateBook
+// Method      : VolumeCube
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function to create new book entry
+// Description : Function to calculate volume of cube.
 // -------------------------------------------------------
 
 void VolumeCube()
@@ -79,12 +86,14 @@ void VolumeCube()
     COverloadVolume CubeVolume(fLengthCube);
     CubeVolume.Display();
 }
+
 // -------------------------------------------------------
-// Method      : CreateBook
+// Method      : VolumePyramid
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function to create new book entry
+// Description : Function to calculate volume of pyramid.
 // -------------------------------------------------------
+
 void VolumePyramid()
 {
     float fLengthPyramid;
@@ -98,10 +107,10 @@ void VolumePyramid()
 }
 
 // -------------------------------------------------------
-// Method      : CreateBook
+// Method      : VolumePrism
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function to create new book entry
+// Description : Function to calculate volume of prism.
 // -------------------------------------------------------
 
 void VolumePrism()
@@ -121,12 +130,10 @@ void VolumePrism()
 }
 
 void UserInterface()
-
 {
     int nChoice;
     do
     {
-		//interface for the user
         cout << "\n\n**************************Volume Of Shapes******************\n";
         cout <<"1.Cube\n2.Pyramid\n3.Prism\nEnter your choice: ";
         cin >> nChoice;
@@ -143,9 +150,9 @@ void UserInterface()
         case 3:
             VolumePrism();
             break;
+
         default:
 			cout <<"\n invalid character\n";
         }
     }while(nChoice != 0 );
-
 }

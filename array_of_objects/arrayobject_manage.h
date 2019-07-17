@@ -6,7 +6,7 @@
  *
  * Author   : Kiran Bal
  * Version  : 1.0.0
- * Date     : 05-07-2019
+ * Date     : 09-07-2019
  *
  */
 
@@ -42,6 +42,5 @@ class CEmployee
         friend void SortByDesignation(int, CEmployee * );
 };
 void UserInterface();
-
 
 #endif // EMPLOYEEDETAILS_MANAGE_H_INCLUDED

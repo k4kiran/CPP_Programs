@@ -1,9 +1,5 @@
 
 #include "CInterface.h"
-#include "CCircle.h"
-#include "CRectangle.h"
-#include "CTriangle.h"
-#include "CIShape.h"
 
 void CInterface::UserInterface()
 {

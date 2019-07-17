@@ -1,7 +1,7 @@
 #ifndef CRECTANGLE_H
 #define CRECTANGLE_H
 
-
+#include "CInterface.h"
 class CRectangle : public CIShape
 {
   private:

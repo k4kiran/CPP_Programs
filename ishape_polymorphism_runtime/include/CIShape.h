@@ -4,7 +4,6 @@
 #include <iostream>
 #include <stdlib.h>
 #define LENGTH 20
-#include "CTriangle.h"
 
 using namespace std;
 
