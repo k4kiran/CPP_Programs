@@ -42,8 +42,8 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
         }
     }
     //testing output
-    cout << "\n\n********************EMPLOYEE DETAILS*************************\n";
-    cout << "\nNAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
+    cout << "\n\n\n\n\t\t\t------------------- EMPLOYEE DETAILS ----------------------------\n";
+    cout << "\n\n\n\t\t\tSl No\t\tNAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
     for( int i=0;i < nCountEmployee; i++)
     {
         DisplayDetails( pEmployee2, i );
@@ -59,12 +59,12 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
 
 void CEmployee::ReadDetails()
 {
-        cout << "\nName : ";
+        cout << "\n\t\t\t\tName         : ";
         getchar();
         getline(cin, m_szEmpName);
-        cout << "Age:(18-35) : ";
+        cout << "\t\t\t\tAge(18-35)   : ";
         cin >> m_nAge;
-        cout << "Salary : ";
+        cout << "\t\t\t\tSalary       : ";
         cin >> m_nSalary;
  }
 
@@ -78,10 +78,11 @@ void CEmployee::ReadDetails()
  void CEmployee::DesignationRead()
  {
         int nChoiceDesignation;
-        cout << "\nDesignation List\n";
-        cout << "-----------------\n\n";
-        cout << "1.Programmer\n2.Data Analyst\n3.Web Designer\n";
-        cout << "Choose designation from The menu: (1,2 or 3) : ";
+        cout << "\n\tDesignation List\n";
+        cout << "\t-----------------\n";
+        cout << "\t\t1.Programmer\n\t\t2.Data Analyst\n\t\t3.Web Designer\n";
+        cout << "\nChoose designation from The menu: (1,2 or 3) : ";
+        repeat:
         cin >> nChoiceDesignation;
         switch(nChoiceDesignation)
         {
@@ -101,7 +102,8 @@ void CEmployee::ReadDetails()
                 break;
 
             default:
-                cout << "\nPlease enter valid option from the menu";
+                cout << "\nPlease enter valid option from the menu :";
+                goto repeat;
         }
  }
 
@@ -116,23 +118,13 @@ void CEmployee::ReadDetails()
 
 void DisplayDetails( /*IN*/ CEmployee *pEmployee3, /*IN*/ int nIterate )
 {
+    cout <<"\t\t\t";
+    cout << nIterate + 1 << "\t\t";
     cout << pEmployee3[nIterate].m_szEmpName << "\t\t";
     cout << pEmployee3[nIterate].m_nAge << "\t";
     cout << pEmployee3[nIterate].m_nSalary << "\t\t";
     cout << pEmployee3[nIterate].m_szDesignation << "\n";
 }
 
-// -------------------------------------------------------
-// Method      : UserInterface
-// Parameters  : Nil
-// Returns     : void
-// Description : Function to print UserInterface
-// -------------------------------------------------------
 
-void UserInterface()
-{
-    cout << "**************************************\tEMPLOYEE REGISTRATION\t********************************\n";
-    cout << "\nThis program lets you store employee details and display based on the designation\n";
-    cout << "-------------------------------------------------------------------------------------\n";
-    cout << "\nHow many employee data you want to store ? ";
-}
+

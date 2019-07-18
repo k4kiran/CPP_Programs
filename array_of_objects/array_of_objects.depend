@@ -45,3 +45,23 @@
 	"arrayobject_manage.h"
 	"CInterface.h"
 
+1563489073 source:d:\triassic_solutions\array_of_objects\arrayobject_manage.cpp
+	<string.h>
+	"arrayobject_manage.h"
+
+1563467548 d:\triassic_solutions\array_of_objects\arrayobject_manage.h
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1563488400 source:d:\triassic_solutions\array_of_objects\cinterface.cpp
+	"CInterface.h"
+	"stdlib.h"
+
+1563485378 d:\triassic_solutions\array_of_objects\cinterface.h
+	"arrayobject_manage.h"
+
+1563384099 source:d:\triassic_solutions\array_of_objects\main.cpp
+	"arrayobject_manage.h"
+	"CInterface.h"
+

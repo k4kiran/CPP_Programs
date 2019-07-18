@@ -1,6 +1,6 @@
 
 /**
- * File CBankAccount.cpp - Copyright (C) <2019>
+ * File CBankAccount_manage.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
  * This file contains implementation of Bank Account Problem.
  *
@@ -11,6 +11,8 @@
  */
 
 #include <iostream>
+#include <stdlib.h>
+#include <conio.h>
 #include "CBankAccount_manage.h"
 
 using namespace std;
@@ -74,7 +76,7 @@ void CBankAccount::WithDrawCash()
 }
 
 // --------------------------------------------------------------
-// Method      : CheckBalance
+// Method      : GetBalance
 // Parameters  : Nil
 // Returns     : void
 // Description : Member Function to Check Balance in account.
@@ -90,18 +92,27 @@ void CBankAccount::SetBalance( float fUpdateBalance )
     m_fAccountBalance = fUpdateBalance;
 }
 
+// --------------------------------------------------------------
+// Method      : TitleInterface
+// Parameters  : Nil
+// Returns     : void
+// Description : Member Function to provide interface.
+// --------------------------------------------------------------
 
-void CBankAccount::UserInterface()
+void CBankAccount::TitleInterface()
 {
     cout << "**************************BANK ACCOUNT*********************\n\n";
 }
 
+// --------------------------------------------------------------
+// Method      : UserDetails
+// Parameters  : Nil
+// Returns     : void
+// Description : Member Function to get details from user.
+// --------------------------------------------------------------
+
 void CBankAccount::UserDetails()
 {
-    string szUserName;
-    int nAge;
-    int nAccountNumber;
-
     cout << "Account Details\n";
     cout <<"------------------\n";
     cout << "Name : ";
@@ -109,5 +120,16 @@ void CBankAccount::UserDetails()
     cout << "Age : ";
     cin >> nAge;
     cout << "Account Number : ";
-    cin >> nAccountNumber;
+    cin >> szAccountNumber;
+}
+
+void CBankAccount::DisplayDetails()
+{
+    cout << "\nName: " << szUserName;
+    cout << "\nAccount Number: " << szAccountNumber;
+}
+
+string CBankAccount::GetAccountNo()
+{
+    return szAccountNumber;
 }

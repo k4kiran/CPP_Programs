@@ -12,9 +12,12 @@
 
 #include "CBankAccount_manage.h"
 #include "CSavingsAccount_manage.h"
+#include "CCurrentAccount_manage.h"
+#include "CInterface.h"
 
 int main()
 {
+    /*
     float fBalance;
     CSavingsAccount Account1;
     Account1.UserInterface();
@@ -26,5 +29,22 @@ int main()
     Account1.DepositCash();
     Account1.CalculateInterest();
     Account1.WithDrawCash();
+    */
+   // while(1)
+   // {
+    CInterface account2;
+    account2.TitleInterface();
+    account2.UserInterface();
+//  account2.UserDetails();
+//    account2.SetBalance( 100000 );
+//    account2.WithDrawCash();
+
+//    }
+   /* CCurrentAccount account2;
+    account2.UserInterface();
+    account2.UserDetails();
+    account2.SetBalance( 1000 );
+    account2.WithDrawCash();
+    */
     return 0;
 }

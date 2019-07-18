@@ -36,6 +36,8 @@
 		<Unit filename="CBankAccount_manage.h" />
 		<Unit filename="CCurrentAccount_manage.cpp" />
 		<Unit filename="CCurrentAccount_manage.h" />
+		<Unit filename="CInterface.cpp" />
+		<Unit filename="CInterface.h" />
 		<Unit filename="CInterface_manage.cpp" />
 		<Unit filename="CInterface_manage.h" />
 		<Unit filename="CSavingsAccount_manage.cpp" />

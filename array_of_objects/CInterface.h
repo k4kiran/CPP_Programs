@@ -9,6 +9,8 @@ class CInterface
 
     public:
         void UserInterfaceMain();
+        void UserInterface();
+        void InterfaceTitle();
 };
 
 #endif // CINTERFACE_H_INCLUDED
