@@ -85,3 +85,29 @@ float CBankAccount::GetBalance()
      return m_fAccountBalance;
 }
 
+void CBankAccount::SetBalance( float fUpdateBalance )
+{
+    m_fAccountBalance = fUpdateBalance;
+}
+
+
+void CBankAccount::UserInterface()
+{
+    cout << "**************************BANK ACCOUNT*********************\n\n";
+}
+
+void CBankAccount::UserDetails()
+{
+    string szUserName;
+    int nAge;
+    int nAccountNumber;
+
+    cout << "Account Details\n";
+    cout <<"------------------\n";
+    cout << "Name : ";
+    cin >> szUserName;
+    cout << "Age : ";
+    cin >> nAge;
+    cout << "Account Number : ";
+    cin >> nAccountNumber;
+}

@@ -6,17 +6,17 @@
  *
  * Author   : Kiran Bal
  * Version  : 1.0.0
- * Date     : 05-07-2019
+ * Date     : 10-07-2019
  *
  */
 
  #include "operator_overload_complex.h"
 
 // -------------------------------------------------------
-// Method      : DesignationRead
+// Method      : Constructor
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function of class to read employee designation.
+// Description : No argument constructor.
 // -------------------------------------------------------
 
 CComplex::CComplex( void )
@@ -25,12 +25,14 @@ CComplex::CComplex( void )
     //unimplemented
 }
 
-// -------------------------------------------------------
-// Method      : DesignationRead
-// Parameters  : Nil
+// -----------------------------------------------------------------------
+// Method      : Constructor
+// Parameters  :
+//    <param 1> - <float> - real part of complex number
+//    <param 2> - <float> - imaginary part of complex number
 // Returns     : void
-// Description : Member function of class to read employee designation.
-// -------------------------------------------------------
+// Description : constructor to initialize real and imaginary parts value
+// -----------------------------------------------------------------------
 
 CComplex::CComplex( float fReal, float fImag)
 {
@@ -39,10 +41,11 @@ CComplex::CComplex( float fReal, float fImag)
 }
 
 // -------------------------------------------------------
-// Method      : DesignationRead
-// Parameters  : Nil
+// Method      : operator
+// Parameters  :
+//    <param 1> - <CComplex> - object of ccomplex class.
 // Returns     : void
-// Description : Member function of class to read employee designation.
+// Description : Function to overload operator.
 // -------------------------------------------------------
 
 CComplex CComplex::operator + (CComplex const &OperatorObject)
@@ -53,27 +56,26 @@ CComplex CComplex::operator + (CComplex const &OperatorObject)
     return TempObject;
 }
 
-// -------------------------------------------------------
-// Method      : DesignationRead
+// ---------------------------------------------------------------------------
+// Method      : DisplayValue
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function of class to read employee designation.
-// -------------------------------------------------------
+// Description : Member function of class to Display real and imaginary parts.
+// ---------------------------------------------------------------------------
 
 void  CComplex::DisplayValue()
 {
     cout << "Result is: " << m_fReal<<" + "<<m_fImag<<"i\n";
 }
 
-// -------------------------------------------------------
-// Method      : DesignationRead
+// ------------------------------------------------------------------
+// Method      : AddComplex
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function of class to read employee designation.
-// -------------------------------------------------------
+// Description : Function to add complex numbers and display result.
+// ------------------------------------------------------------------
 
 void AddComplex()
-
 {
     float fRealPart,fImagPart;
     CComplex CPrint;
@@ -91,15 +93,14 @@ void AddComplex()
     cout << "Entered complex number: " << fRealPart <<" + " << fImagPart << "i\n\n";
     CComplex ComplexAddResult = ComplexAdd1 + ComplexAdd2;
     ComplexAddResult.DisplayValue();
-
 }
 
-// -------------------------------------------------------
-// Method      : DesignationRead
+// --------------------------------------------------------
+// Method      : UserInterface
 // Parameters  : Nil
 // Returns     : void
-// Description : Member function of class to read employee designation.
-// -------------------------------------------------------
+// Description : Function to create interface for the user.
+// --------------------------------------------------------
 
 void UserInterface()
 {
@@ -107,19 +108,4 @@ void UserInterface()
     cout << "This is a software to add two complex numbers";
     cout << "\n---------------------------------------------\n\n";
 }
-/*
-void CComplex::FormatPrint(CComplex *ComplexAdd3,CComplex *ComplexAdd4)
-{
-    CComplex ComplexAdd1,ComplexAdd2;
-    CComplex ComplexAddResult = ComplexAdd1 + ComplexAdd2;
-    cout<<setw(5)<<ComplexAdd1.m_fReal<<" + "<<ComplexAdd1.m_fImag<<"i";
-    cout<<" +\n";
-    cout<<setw(5)<<ComplexAdd2.m_fReal<<" + "<<ComplexAdd2.m_fImag<<"i";
-    cout<<"\n----------\n";
-    cout<<setw(5)<<ComplexAddResult.m_fReal<<" + "<<ComplexAddResult.m_fImag<<"i\n";
-    ComplexAddResult.DisplayValue();
 
-}
-
-
-*/

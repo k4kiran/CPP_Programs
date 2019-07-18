@@ -13,6 +13,15 @@
 #include<string.h>
 #include "arrayobject_manage.h"
 
+// --------------------------------------------------------------------
+// Method      : SortByDesignation
+// Parameters  :
+//    <param 1> - <int> - total number of employee.
+//    <param 2> - <CEmployee> - object of class CEmployee.
+// Returns     : void
+// Description : function to sort employee by designation.
+// --------------------------------------------------------------------
+
 void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 )
 {
     CEmployee TempObject;
@@ -30,7 +39,6 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
             {
                 //unimplemented
             }
-
         }
     }
     //testing output
@@ -38,7 +46,6 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
     cout << "\nNAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
     for( int i=0;i < nCountEmployee; i++)
     {
-
         DisplayDetails( pEmployee2, i );
     }
 }
@@ -61,12 +68,12 @@ void CEmployee::ReadDetails()
         cin >> m_nSalary;
  }
 
-// -------------------------------------------------------
+// --------------------------------------------------------------------
 // Method      : DesignationRead
 // Parameters  : Nil
 // Returns     : void
 // Description : Member function of class to read employee designation.
-// -------------------------------------------------------
+// --------------------------------------------------------------------
 
  void CEmployee::DesignationRead()
  {
@@ -100,7 +107,9 @@ void CEmployee::ReadDetails()
 
 // -------------------------------------------------------
 // Method      : DisplayDetails
-// Parameters  : Nil
+// Parameters  :
+//    <param 1> - <CEmployee> - object of class CEmployee.
+//    <param 2> - <int> - Variavle to iterate through each employee.
 // Returns     : void
 // Description : Displays employee details
 // -------------------------------------------------------

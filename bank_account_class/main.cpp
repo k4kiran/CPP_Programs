@@ -17,6 +17,8 @@ int main()
 {
     float fBalance;
     CSavingsAccount Account1;
+    Account1.UserInterface();
+    Account1.UserDetails();
     Account1.InitialBalance();
     Account1.GetInterestRate();
     fBalance = Account1.GetBalance();

@@ -4,6 +4,7 @@
 void CInterface::UserInterface()
 {
         int nShapeChoice;
+        //cout << "*************************************DRAW SHAPES*************************************\n";
         cout << "\n0.Exit";
         cout << "\n1.Triangle";
         cout << "\n2.Circle";
@@ -16,8 +17,9 @@ void CInterface::UserInterface()
 
 void CInterface::ReadDetails( /*IN*/ int nChoice )
        {
-            int nCount = 0;
+          int nCount = 0;
           CIShape *Shapes[LENGTH];
+
           switch( nChoice )
          {
            case 0:
@@ -54,5 +56,8 @@ void CInterface::ReadDetails( /*IN*/ int nChoice )
                     cout << endl << endl;
                 }
                 break;
+         default:
+                cout << "\nInvalid Character";
          }
+
 }

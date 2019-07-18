@@ -1,7 +1,7 @@
 
-#include "CBankAccount_manage.h"
+#include "CCurrentAccount_manage.h"
 
-void CBankAccount::WithDrawCash()
+void CCurrent::WithDrawCash()
 {
     float fWithdrawAmount;
     float fCurrentBalance;
@@ -9,19 +9,17 @@ void CBankAccount::WithDrawCash()
     cout << "\nEnter the Withdraw amount : ";
     cin >> fWithdrawAmount;
     fCurrentBalance = GetBalance();
-    if( fWithdrawAmount < fCurrentBalance - 1000 )
+    if( (fCurrentBalance - fWithdrawAmount) < 1000 )
     {
-        cout << "\nBalance will be less than 1000 Rs,Additional charge will be imposed ";
-        cout << "\n Do you want to Continue? (y/n) : ";
-        cin >> cChoice;
-        if( cChoice == "y" )
-        {
-            //subtract cash
-        }
-        else
-        {
-            break;
-        }
+        cout << "\nBalance is less than 1000 Rs\nTransaction failed ";
 
     }
+    else
+    {
+        fCurrentBalance = fCurrentBalance - fWithdrawAmount;
+        SetBalance( fCurrentBalance );
+
+    }
+
 }
+

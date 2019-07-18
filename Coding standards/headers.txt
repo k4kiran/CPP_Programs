@@ -1,0 +1,54 @@
+File Header
+
+
+/**
+ * File func_manage.h - Copyright (C) <2019>
+ * <Triassic Solutions Private Limited>. All rights reserved.
+ * This file contains the definition of functions.
+ *
+ * Author   : Kiran Bal
+ * Version  : 1.0.0
+ * Date     : 05-07-2019
+ *
+ */
+
+
+
+Class header
+
+
+/**
+* Class CComplex
+* simple class to Overload the '+' operator for complex number addition
+* Author :Kiran Bal
+* Version :1.0.0
+* Date :10-07-2019
+*
+*/
+
+
+Function header
+
+
+
+// ---------------------------------------------------------------------------
+// Method      : DisplayValue
+// Parameters  : Nil
+// Returns     : void
+// Description : Member function of class to Display real and imaginary parts.
+// ---------------------------------------------------------------------------
+
+
+
+// -----------------------------------------------------------------------
+// Method      : Constructor
+// Parameters  :
+//    <param 1> - <float> - real part of complex number
+//    <param 2> - <float> - imaginary part of complex number
+// Returns     : void
+// Description : constructor to initialize real and imaginary parts value
+// -----------------------------------------------------------------------
+
+
+
+

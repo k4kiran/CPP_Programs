@@ -6,7 +6,11 @@
 int main()
 {
    CInterface Interface1;
-   Interface1.UserInterface();
+   while(1)
+   {
+     Interface1.UserInterface();
+   }
+
    //Interface1.SelectShape();
 
     return 0;

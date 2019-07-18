@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1563449699 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\main.cpp
+	"CInterface.h"
+
+1563449936 d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\include\cinterface.h
+	<fstream>
+	<iostream>
+

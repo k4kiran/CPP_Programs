@@ -1,8 +1,8 @@
 
 /**
- * File func_manage.cpp - Copyright (C) <2019>
+ * File method_overload_volume_manage.cpp - Copyright (C) <2019>
  * <Triassic Solutions Private Limited>. All rights reserved.
- * This file contains implementation of function overloading for Volume of shapes.
+ * This file contains implementation of method overloading for Volume of shapes.
  *
  * Author   : Kiran Bal
  * Version  : 1.0.0
@@ -12,15 +12,13 @@
 
 #include "method_overload_volume_manage.h"
 
-
-
-
 // -------------------------------------------------------
 // Method      : Volume
 // Parameters  :
-//	<param 1> - <int iLength> - length of the Prism.
-//  <param 2> - <int iBreadth> - Breadth of the Prism.
-// Returns     : <int nVolumePrism> - Volume calculated by the function.
+//	<param 1> - <float> - length of the Prism.
+//  <param 2> - <float> - Breadth of the Prism.
+//  <param 3> - <float> - Height of the Prism.
+// Returns     : <float> - Volume calculated by the function.
 // Description : Returns the Volume of Prism.
 // -------------------------------------------------------
 
@@ -34,8 +32,8 @@ float VolumeOfShapes::Volume( /*IN*/ float fLength, /*IN*/ float fBreadth, /*IN*
 // -------------------------------------------------------
 // Method      : Volume
 // Parameters  :
-//	<param 1> - <int fRadius> - Radius of the Cube.
-// Returns     : <int nVolumeCube> - Volume calculated by the function.
+//	<param 1> - <float> - side of the Cube.
+// Returns     : <float> - Volume calculated by the function.
 // Description : Returns the Volume of Cube.
 // -------------------------------------------------------
 
@@ -49,10 +47,10 @@ float VolumeOfShapes::Volume( /*IN*/ float fLength )
 // -------------------------------------------------------
 // Method      : Volume
 // Parameters  :
-//	<param 1> - <int iLength> - length of the Prism.
-//  <param 2> - <int iBreadth> - Breadth of the Prism.
-//  <param 3> - <int iHeight> - Height of the Pyramid.
-// Returns     : <int nVolumePyramid> - Volume calculated by the function.
+//	<param 1> - <float> - length of the Pyramid.
+//  <param 2> - <float> - breadth of the Pyramid.
+//  <param 3> - <float> - Height of the Pyramid.
+// Returns     : <float> - Volume calculated by the function.
 // Description : Returns the Volume of Pyramid.
 // -------------------------------------------------------
 
@@ -72,7 +70,6 @@ float VolumeOfShapes::Volume( /*IN*/ float fLength, /*IN*/ float fHeight )
 
 void VolumeOfShapes::CubeVolume()
 {
-
     cout << "Enter Length of cube: ";
     cin  >> nSide1;
 
@@ -90,8 +87,6 @@ void VolumeOfShapes::CubeVolume()
 
 void VolumeOfShapes::PrismVolume()
 {
-
-
     cout << "\nEnter length of prism: ";
     cin >> fLengthPrism;
     cout << "\nEnter breadth of prism: ";
@@ -113,7 +108,6 @@ void VolumeOfShapes::PrismVolume()
 
 void VolumeOfShapes::PyramidVolume()
 {
-
     cout << "\nEnter base length of Pyramid: ";
     cin >> fBaseLength;
     cout << "\nEnter the height of pyramid: ";

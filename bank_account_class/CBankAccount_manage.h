@@ -17,6 +17,9 @@ class CBankAccount
         void DepositCash();
         void WithDrawCash();
         float GetBalance();
+        void SetBalance( float );
+        void UserInterface();
+        void UserDetails();
 };
 
 
