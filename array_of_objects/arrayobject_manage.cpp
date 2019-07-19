@@ -42,7 +42,7 @@ void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 
         }
     }
     //testing output
-    cout << "\n\n\n\n\t\t\t------------------- EMPLOYEE DETAILS ----------------------------\n";
+    cout << "\n\n\n\n\t\t\t------------------------ EMPLOYEE DETAILS ----------------------------\n";
     cout << "\n\n\n\t\t\tSl No\t\tNAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
     for( int i=0;i < nCountEmployee; i++)
     {

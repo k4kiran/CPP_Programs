@@ -48,10 +48,32 @@ void CInterface::UserInterface()
 
 void CInterface::UserInterface2()
 {
+    int nChoiceMainMenu;
+    CStudentDetails student;
     cout << "\n1.Enter Details\n";
     cout << "2.View Details\n";
     cout << "3.Exit\n";
     cout << "Please Enter your preferred choice from menu (enter 1,2 or 3): ";
     cout << "\n\n";
-}
+    cin >> nChoiceMainMenu;
+    switch( nChoiceMainMenu )
+    {
+    case 1:
 
+        student.ReadDetails();
+        break;
+
+    default:
+        cout<<"\ninvalid";
+    }
+}
+/*
+void CInterface::UserInterfaceMain()
+{
+    this->UserInterface();
+    this->UserInterface2();
+    //CStudentDetails student;
+    //student.ReadDetails();
+    //student.DisplayDetails();
+}
+*/

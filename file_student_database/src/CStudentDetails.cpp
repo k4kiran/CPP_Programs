@@ -11,18 +11,25 @@
  */
 
 #include "CStudentDetails.h"
-/*
-CStudentDetails::CStudentDetails()
-{
-    //ctor
-}
 
-CStudentDetails::~CStudentDetails()
-{
-    //dtor
-}
-*/
+
 void CStudentDetails::ReadDetails()
 {
-    cout << ""
+    cout << "\nName                  :";
+    cin >> m_szName;
+    cout << "\nGender                :";
+    cin >> m_szGender;
+    cout << "\nCourse                :";
+    cin >> m_szCourse;
+    cout << "\nDate of join (DDMMYY) :";
+    cin >> m_szDateOfJoin;
 }
+
+void CStudentDetails::DisplayDetails()
+{
+    cout << "\nName         :" << m_szName;
+    cout << "\nGender       :" << m_szGender;
+    cout << "\nCourse       :" << m_szCourse;
+    cout << "\nDate of join :" << m_szDateOfJoin;
+}
+

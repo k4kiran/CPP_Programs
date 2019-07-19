@@ -12,19 +12,21 @@
 
 #ifndef CSTUDENTDETAILS_H
 #define CSTUDENTDETAILS_H
+#include "CInterface.h"
+
+using namespace std;
 
 class CStudentDetails
 {
-     private:
-          void ReadDetails();
+    private:
+        string m_szName;
+        string m_szGender;
+        string m_szCourse;
+        string m_szDateOfJoin;
+
     public:
-        //CStudentDetails();
-        //virtual ~CStudentDetails();
-
-
-
-
-
+        void ReadDetails();
+        void DisplayDetails();
 };
 
 #endif // CSTUDENTDETAILS_H

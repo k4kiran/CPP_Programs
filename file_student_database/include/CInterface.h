@@ -12,8 +12,9 @@
 #ifndef CINTERFACE_H
 #define CINTERFACE_H
 
-#include <fstream>
+
 #include <iostream>
+#include "CStudentDetails.h"
 
 using namespace std;
 
@@ -29,14 +30,15 @@ using namespace std;
 class CInterface
 {
     private:
-
+        int nIterate = 0;
+        //define array of object;
 
     public:
-       /* CInterface();
-        virtual ~CInterface();
-        */
+
         void UserInterface();
         void UserInterface2();
+        void UserInterfaceMain();
+
 };
 
 #endif // CINTERFACE_H

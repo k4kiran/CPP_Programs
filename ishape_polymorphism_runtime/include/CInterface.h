@@ -1,7 +1,8 @@
 #ifndef CINTERFACE_H
 #define CINTERFACE_H
 
-
+#include <stdlib.h>
+#include <conio.h>
 #include "CCircle.h"
 #include "CRectangle.h"
 #include "CTriangle.h"
@@ -9,8 +10,12 @@
 
 class CInterface
 {
+private:
+     int nCount = 0;
+     CIShape *Shapes[LENGTH];
 public:
     void UserInterface();
+    void InterfaceTitle();
     void ReadDetails( int );
 };
 
