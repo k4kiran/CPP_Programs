@@ -11,9 +11,10 @@
  */
 #ifndef CINTERFACE_H
 #define CINTERFACE_H
+#define MAXSTUDENT 20
 
-
-#include <iostream>
+#include<iostream>
+#include <fstream>
 #include "CStudentDetails.h"
 
 using namespace std;

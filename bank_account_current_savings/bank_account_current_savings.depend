@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1563736589 source:e:\bank_account_current_savings\src\csavingsaccount.cpp
+	"CSavingsAccount.h"
+
+1563736688 e:\bank_account_current_savings\include\csavingsaccount.h
+	"CBankAccount.h"
+
+1563737102 e:\bank_account_current_savings\include\cbankaccount.h
+	<iostream>
+
+1563736904 source:e:\bank_account_current_savings\main.cpp
+	<iostream>
+	"CBankAccount.h"
+	"CSavingsAccount.h"
+
+1563736998 source:e:\bank_account_current_savings\src\cbankaccount.cpp
+	"CBankAccount.h"
+	<iostream>
+

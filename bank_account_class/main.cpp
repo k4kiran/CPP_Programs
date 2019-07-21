@@ -40,11 +40,6 @@ int main()
 //    account2.WithDrawCash();
 
 //    }
-   /* CCurrentAccount account2;
-    account2.UserInterface();
-    account2.UserDetails();
-    account2.SetBalance( 1000 );
-    account2.WithDrawCash();
-    */
+
     return 0;
 }

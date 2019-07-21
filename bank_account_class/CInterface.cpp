@@ -25,17 +25,27 @@
 void CInterface::UserInterface()
 {
  int nChoice;
+ CSavingsAccount *StudentData[LENGTH];
+ cout << " 1.Current account\n2.Savings account\nEnter your choice :";
+ cin >> nChoiceMain;
+ if( nChoiceMain == 1)
+ {
+
+ }
 // CInterface *StudentData[LENGTH];
-   CSavingsAccount *StudentData[LENGTH];
+
 int nIterateData = 0;
 StudentData[nIterateData] = new CSavingsAccount;
 string szAcNumber;
 string k;
 //returnmenu:
+
 while(1)
 {
- cout <<"1.New User Registration\n2.Deposit\n3.Withdraw\n4.Balance Enquiry\n5.EXIT\nEnter your preferred choice from the menu : ";
+ cout <<"1.New User Registration\n2.Deposit\n3.Withdraw\n4.Balance Enquiry";
+ cout << "\n5.EXIT\nEnter your preferred choice from the menu : ";
  cin >> nChoice;
+
  switch(nChoice)
  {
     case 1:

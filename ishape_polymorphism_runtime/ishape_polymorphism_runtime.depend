@@ -38,7 +38,7 @@
 	<iostream>
 	<stdlib.h>
 
-1563381634 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\ccircle.cpp
+1563618070 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\ccircle.cpp
 	"CCircle.h"
 
 1563467549 d:\triassic_solutions\ishape_polymorphism_runtime\include\ccircle.h
@@ -54,7 +54,9 @@
 1563384511 d:\triassic_solutions\ishape_polymorphism_runtime\include\ctriangle.h
 	"CInterface.h"
 
-1563490605 d:\triassic_solutions\ishape_polymorphism_runtime\include\cinterface.h
+1563618070 d:\triassic_solutions\ishape_polymorphism_runtime\include\cinterface.h
+	<stdlib.h>
+	<conio.h>
 	"CCircle.h"
 	"CRectangle.h"
 	"CTriangle.h"
@@ -63,15 +65,15 @@
 1563384610 d:\triassic_solutions\ishape_polymorphism_runtime\include\crectangle.h
 	"CInterface.h"
 
-1563467549 source:d:\triassic_solutions\ishape_polymorphism_runtime\main.cpp
+1563618070 source:d:\triassic_solutions\ishape_polymorphism_runtime\main.cpp
 	"CInterface.h"
 
-1563467549 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\cinterface.cpp
+1563618070 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\cinterface.cpp
 	"CInterface.h"
 
-1563381634 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\crectangle.cpp
+1563618070 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\crectangle.cpp
 	"CRectangle.h"
 
-1563381634 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\ctriangle.cpp
+1563618070 source:d:\triassic_solutions\ishape_polymorphism_runtime\src\ctriangle.cpp
 	"CTriangle.h"
 

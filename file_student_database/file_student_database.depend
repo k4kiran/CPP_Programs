@@ -15,3 +15,21 @@
 1563519305 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\src\cstudentdetails.cpp
 	"CStudentDetails.h"
 
+1563467548 source:d:\triassic_solutions\file_student_database\main.cpp
+	"CInterface.h"
+
+1563730137 d:\triassic_solutions\file_student_database\include\cinterface.h
+	<iostream>
+	<fstream>
+	"CStudentDetails.h"
+
+1563618070 d:\triassic_solutions\file_student_database\include\cstudentdetails.h
+	"CInterface.h"
+
+1563733996 source:d:\triassic_solutions\file_student_database\src\cinterface.cpp
+	"CInterface.h"
+	<fstream>
+
+1563729867 source:d:\triassic_solutions\file_student_database\src\cstudentdetails.cpp
+	"CStudentDetails.h"
+

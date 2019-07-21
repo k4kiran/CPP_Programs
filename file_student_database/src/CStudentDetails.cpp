@@ -17,6 +17,8 @@ void CStudentDetails::ReadDetails()
 {
     cout << "\nName                  :";
     cin >> m_szName;
+    //fstream file1;
+    //file1.open("new.txt", ios::out);
     cout << "\nGender                :";
     cin >> m_szGender;
     cout << "\nCourse                :";
