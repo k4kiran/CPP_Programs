@@ -4,7 +4,8 @@
 
 CCurrentAccount::CCurrentAccount()
 {
-    //unimplemented
+    fAccountBalance = 10000;
+    fFineAmount = 90;
 }
 
 CCurrentAccount::CCurrentAccount( float fBalance,float fAmountFine )
@@ -13,7 +14,7 @@ CCurrentAccount::CCurrentAccount( float fBalance,float fAmountFine )
     fFineAmount = fAmountFine;
 }
 
-CCurrentAccount::WithdrawCash( float fAmount )
+void CCurrentAccount::WithdrawCash( float fAmount )
 {
     if( (fAccountBalance - fAmount)> 1000)
     {
@@ -25,4 +26,9 @@ CCurrentAccount::WithdrawCash( float fAmount )
         fAccountBalance = fAccountBalance - fAmount - fFineAmount;
         cout << "fee deducted";
     }
+}
+
+void CCurrentAccount::UpdateFee( float nFineNew )
+{
+    fFineAmount = nFineNew;
 }

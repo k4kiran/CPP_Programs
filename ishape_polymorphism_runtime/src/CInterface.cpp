@@ -14,7 +14,7 @@ void CInterface::UserInterface()
         cout << "\n2.Circle";
         cout << "\n3.Rectangle";
         cout << "\n4.Draw selected shapes";
-        cout << "\nEnter your choice from the above menu (0,1,2 or 3):  ";
+        cout << "\nEnter your choice from the above menu (0,1,2,3 or 4):  ";
         cin >> nShapeChoice;
         this->ReadDetails( nShapeChoice );
 }

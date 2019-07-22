@@ -95,6 +95,7 @@ void CInterface::UserInterface2()
             outfile1.open("testfile.dat",ios::in);
             outfile1.read((char *) &student[1], sizeof(student[1]));
             student[1].DisplayDetails();
+	    outfile1.close();
             break;
 
         default:

@@ -2,12 +2,13 @@
 #define CCURRENTACCOUNT_H
 #include "CBankAccount.h"
 
-class CCurrentAccount : CBankAccount
+class CCurrentAccount : public CBankAccount
 {
     public:
         CCurrentAccount();
         CCurrentAccount( float, float );
-        int WithdrawCash( float );
+        void WithdrawCash( float );
+        void UpdateFee( float );
 
     protected:
         float fFineAmount;

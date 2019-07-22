@@ -36,10 +36,12 @@
 		</Compiler>
 		<Unit filename="include/CBankAccount.h" />
 		<Unit filename="include/CCurrentAccount.h" />
+		<Unit filename="include/CManageAccounts.h" />
 		<Unit filename="include/CSavingsAccount.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CBankAccount.cpp" />
 		<Unit filename="src/CCurrentAccount.cpp" />
+		<Unit filename="src/CManageAccounts.cpp" />
 		<Unit filename="src/CSavingsAccount.cpp" />
 		<Extensions>
 			<code_completion />

@@ -2,7 +2,8 @@
 
 CSavingsAccount::CSavingsAccount()
 {
-    //unimplemented
+    fAccountBalance=10000;
+    fInterestRate = 10;
 }
 CSavingsAccount::CSavingsAccount( float fBalance,float fPercentage)
 {

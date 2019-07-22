@@ -3,7 +3,7 @@
 
 #include "CBankAccount.h"
 
-class CSavingsAccount : CBankAccount
+class CSavingsAccount : public CBankAccount
 {
     public:
         CSavingsAccount();
