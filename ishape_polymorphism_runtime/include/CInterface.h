@@ -8,6 +8,7 @@
 #include "CTriangle.h"
 #include "CIShape.h"
 
+
 class CInterface
 {
 private:

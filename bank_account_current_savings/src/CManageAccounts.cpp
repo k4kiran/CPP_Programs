@@ -22,29 +22,35 @@ void CManageAccounts::AccountsManager()
     int nChoiceType;
     while(1)
     {
+         repeatMainMenu:
         this->MainMenu();
         cin >> nMainChoice;
         switch( nMainChoice )
         {
         case 1:
+            repeatAdminMenu:
             system( "CLS" );
             this->Title();
             do
             {
             this->AdminMenu();
+            returnMenu:
             cin >> nChoiceAdminMenu;
             system( "CLS" );
             switch( nChoiceAdminMenu )
             {
             case 1:
                 this->Title();
-                do
+               do
                 {
+                    system("CLS");
+                    this->Title();
                     this->AccountTypeMenu();
                     repeat:
                     cin >> nChoiceType;
-                    if(nChoiceType == 1)
+                    switch(nChoiceType)
                     {
+                        case 1:
                         system( "CLS" );
                         this->Title();
                         cout << "\n\n\n";
@@ -61,10 +67,11 @@ void CManageAccounts::AccountsManager()
 
                         //Account1[nIterateVariable]->DisplayDetails();
                         nIterateVariable++;
-                    }
+                        goto repeatAdminMenu;
+                        break;
 
-                    else if(nChoiceType == 2)
-                    {
+                    case 2:
+
                         system( "CLS" );
                         this->Title();
                         cout << "\n\n\n";
@@ -81,14 +88,19 @@ void CManageAccounts::AccountsManager()
                         //add continue getchar;
                        // Account1[nIterateVariable]->DisplayDetails();
                         nIterateVariable++;
-                    }
-                    else
-                    {
-                        cout << "Please enter your preferred option from Menu: ";
+                        goto repeatAdminMenu;
+                        break;
+
+                    case 3:goto repeatAdminMenu;
+                            break;
+
+                    default:
+                        cout << string(40,' ') << "\nPlease enter your preferred option from Menu: ";
                         goto repeat;
+
                     }
 
-                    }while(nChoiceType >= 3);
+                    }while(nChoiceType < 3);
 
                     break;
             case 2:
@@ -112,7 +124,13 @@ void CManageAccounts::AccountsManager()
                     Account1[i]->DisplayDetails();
                 }
                 break;
-            default:cout <<"not ok";
+
+            case 5:goto repeatMainMenu;
+            break;
+            default:
+
+                cout <<"Pleaase enter  preferred choice from the menu: ";
+                goto returnMenu;
             }
 
          break;
@@ -182,6 +200,7 @@ void CManageAccounts::AccountsManager()
             }
             }
         }while(nChoiceAdminMenu >5);
+        break;
 
     case 9:
         cout << "\nExiting the program";
@@ -199,6 +218,7 @@ void CManageAccounts::Title()
 
 void CManageAccounts::MainMenu()
 {
+        this->Title();
         cout << "\n\n\n\n\n\n"<<string(40,' ') << "1.Administrator\n\n";
         cout << string(40,' ') << "2.Customer\n\n" << string(40,' ') << "9.Exit\n\n";
         cout << "\n\n" << string(40,' ') << "Enter your preferred choice(1 or 2) : ";
@@ -207,15 +227,16 @@ void CManageAccounts::MainMenu()
 void CManageAccounts::AdminMenu()
 {
         cout << "\n\n\n\n\n\n" << string(40,' ') << "1.New Registration\n\n" << string(40,' ') << "2.Change interest rate\n\n";
-        cout << string(40,' ') << "3.change fee\n\n" << string(40,' ') << "4.View Details\n\n\n";
+        cout << string(40,' ') << "3.change fee\n\n" << string(40,' ') << "4.View Details\n\n" << string(40,' ') << "5. Log out\n\n\n";
         cout << string(40,' ') << "Enter your preferred choice from Menu (1,2,3 or 4): ";
 }
 
 void CManageAccounts::AccountTypeMenu()
 {
+
         cout << "\n\n\n\n\n" << string(40,' ') << "Account Type ";
         cout << "\n" << string(40,' ') << "-------------";
         cout << "\n\n\n";
-        cout << string(40, ' ') << "1.Savings\n\n" << string(40,' ') << "2.Current\n\n\n\n";
+        cout << string(40, ' ') << "1.Savings\n\n" << string(40,' ') << "2.Current\n\n" << string(40,' ') << "3.Back to AdminMenu\n\n";
         cout << string(40,' ') << "Enter your preferred choice from the menu (1 or 2): ";
 }

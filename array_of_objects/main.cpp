@@ -15,7 +15,7 @@
 
 int main()
 {
-    CInterface UI;
-    UI.UserInterfaceMain();
+    CInterface ManageShapes;
+    ManageShapes.UserInterfaceMain();
 }
 
