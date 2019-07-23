@@ -13,6 +13,8 @@
 
 #include "CInterface.h"
 #include<fstream>
+#include<string>
+#include<stdlib.h>
 
 
 
@@ -38,7 +40,7 @@ CInterface::~CInterface()
 
 void CInterface::Title()
 {
-    cout << "*********************STUDENT DATABASE*************************\n\n";
+    cout << "****************************************************STUDENT DATABASE**************************************************\n\n";
 }
 
 // ---------------------------------------------------------------------------
@@ -51,21 +53,25 @@ void CInterface::Title()
 void CInterface::Manager()
 {
     int nChoiceMainMenu;
-    CStudentDetails student[MAXSTUDENT];
-    fstream outfile1;
-    int nCh;
-    cout << "1.Administrator\n2.other user\nenter your choice:";
-    cin >> nCh;
+    CStudentDetails student;
+    ofstream storefile;
+    ifstream readfile;
+    int nChoiceUserMenu;
+    cout << "\n\n\n\n\n" << string(40,' ') << "1.Administrator\n\n";
+    cout << string(40,' ') << "2.other user\n\n\n" << string(40,' ') << "Enter your preferred choice from menu (1 or 2):";
+    cin >> nChoiceUserMenu;
     int i = 0;
     int onemore;
-    switch(nCh)
+    switch(nChoiceUserMenu)
     {
     case 1:
-        cout << "\n1.Enter Details\n";
-        cout << "2.View Details\n";
-        cout << "3.Exit\n";
-        cout << "Please Enter your preferred choice from menu (enter 1,2 or 3): ";
-        cout << "\n\n";
+        system("CLS");
+        this->Title();
+        cout << "\n\n\n\n\n";
+        cout << string(40,' ') << "1.Enter Details\n\n";
+        cout << string(40,' ') << "2.View Details\n\n";
+        cout << string(40,' ') << "3.Exit\n\n";
+        cout << string(40,' ') << "Please Enter your preferred choice from menu (enter 1,2 or 3): ";
         cin >> nChoiceMainMenu;
 
         switch( nChoiceMainMenu )
@@ -73,17 +79,17 @@ void CInterface::Manager()
         case 1:
             do
             {
-            student[i].ReadDetails();
-            outfile1.open("testfile.dat",ios::app);
-            if(!outfile1)
+            student.ReadDetails();
+            storefile.open("studentdetails.dat",ios::app);
+            if(!storefile)
             {
                 cout<<"Error in creating file.."<<endl;
                 //return 0;
             }
-            outfile1.write((char*)&student[i],sizeof(student[i]));
+            storefile.write((char*)&student,sizeof(student));
 
-            outfile1.close();
-            cout << "Do  you want to add one more?(1/0)";
+            storefile.close();
+            cout << "\n\n\n" << string(40,' ') << "Do  you want to add one more?(1/0)";
 
             cin>>onemore;
             i++;
@@ -92,10 +98,16 @@ void CInterface::Manager()
             break;
 
         case 2:
-            outfile1.open("testfile.dat",ios::in);
-            outfile1.read((char *) &student[1], sizeof(student[1]));
-            student[1].DisplayDetails();
-	    outfile1.close();
+            system("CLS");
+            this->Title();
+            cout << "\n\n\nRegister Number\t\tName\t\tGender\t\tCourse\t\tDate of join\n";
+            readfile.open("studentdetails.dat",ios::in);
+            while( readfile.read((char *) &student, sizeof(student)))
+            {
+                student.DisplayDetails();
+            }
+            //student.DisplayDetails();
+            readfile.close();
             break;
 
         default:

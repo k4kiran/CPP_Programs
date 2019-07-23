@@ -11,27 +11,27 @@
  */
 
 #include "CStudentDetails.h"
+#include<stdlib.h>
 
 
 void CStudentDetails::ReadDetails()
 {
-    cout << "\nName                  :";
+    system("CLS");
+    cout << "\n\n\n\n\n";
+    cout << string(40,' ') << "Register Number                 :";
+    cin >> m_cRegisterNumber;
+    cout << "\n\n" << string(40,' ') << "Name                  :";
     cin >> m_cName;
-    //fstream file1;
-    //file1.open("new.txt", ios::out);
-    cout << "\nGender                :";
+    cout << "\n\n" << string(40,' ') << "Gender                :";
     cin >> m_cGender;
-    cout << "\nCourse                :";
+    cout << "\n\n" << string(40,' ') << "Course                :";
     cin >> m_cCourse;
-    cout << "\nDate of join (DDMMYY) :";
+    cout << "\n\n" << string(40,' ') << "Date of join (DDMMYY) :";
     cin >> m_cDateOfJoin;
 }
 
 void CStudentDetails::DisplayDetails()
 {
-    cout << "\nName         :" << m_cName;
-    cout << "\nGender       :" << m_cGender;
-    cout << "\nCourse       :" << m_cCourse;
-    cout << "\nDate of join :" << m_cDateOfJoin;
+    cout << "\n\n" << m_cRegisterNumber << "\t\t" << m_cName << "\t\t" << m_cGender << "\n\n" << m_cCourse << "\t\t" << m_cDateOfJoin;
 }
 

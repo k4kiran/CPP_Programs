@@ -20,6 +20,7 @@ using namespace std;
 class CStudentDetails
 {
     private:
+        char m_cRegisterNumber[MAXLENGTH];
         char m_cName[MAXLENGTH];
         char m_cGender[MAXLENGTH];
         char m_cCourse[MAXLENGTH];
@@ -28,6 +29,7 @@ class CStudentDetails
     public:
         void ReadDetails();
         void DisplayDetails();
+       // void StoreDetails();
 };
 
 #endif // CSTUDENTDETAILS_H
