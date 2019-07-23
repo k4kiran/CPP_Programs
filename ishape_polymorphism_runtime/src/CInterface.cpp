@@ -1,11 +1,37 @@
 
+/**
+ * File CInterface.cpp - Copyright (C) <2019>
+ * <Triassic Solutions Private Limited>. All rights reserved.
+ * This file contains the definition of CInterface class.
+ *
+ * Author   : Kiran Bal
+ * Version  : 1.0.0
+ * Date     : 18-07-2019
+ *
+ */
+
 #include "CInterface.h"
+
+// ---------------------------------------------------------------------------
+// Method      : InterfaceTitle
+// Parameters  : Nil
+// Returns     : void
+// Description : Member function of class to print tiltle.
+// ---------------------------------------------------------------------------
 
 void CInterface::InterfaceTitle()
 {
   cout << "***************************************************** DRAW SHAPES ****************************************************\n";
 }
-void CInterface::UserInterface()
+
+// ---------------------------------------------------------------------------
+// Method      : Manager
+// Parameters  : Nil
+// Returns     : void
+// Description : Member function of class to manage all functions.
+// ---------------------------------------------------------------------------
+
+void CInterface::Manager()
 {
         int nShapeChoice;
         //system("CLS");
@@ -19,12 +45,17 @@ void CInterface::UserInterface()
         this->ReadDetails( nShapeChoice );
 }
 
+// -----------------------------------------------------------------------
+// Method      : ReadDetails
+// Parameters  :
+//    <param 1> - <int> - menu choice entered by user.
+// Returns     : void
+// Description : function to read data from the user .
+// -----------------------------------------------------------------------
+
 void CInterface::ReadDetails( /*IN*/ int nChoice )
        {
-//          int nCount = 0;
-//          CIShape *Shapes[LENGTH];
-
-          switch( nChoice )
+        switch( nChoice )
          {
            case 0:
                 cout << "\nExiting the program\n\n\n";
@@ -64,18 +95,23 @@ void CInterface::ReadDetails( /*IN*/ int nChoice )
          case 4:
                 system("CLS");
                 this->InterfaceTitle();
-                cout << "\n\t\t------------------------------ Drawing selected shapes ----------------------------\n\n";
+                if( nCount == 0 )
+                {
+                    cout<<"\n\n\t\t\t\tNo data available,please add sufficiant data ";
+                }
+                else
+                {
+                    cout << "\n\t\t------------------------------ Drawing selected shapes ----------------------------\n\n";
                 for( int nDrawCount = 0; nDrawCount < nCount; nDrawCount++ )
                 {
                     Shapes[nDrawCount]->DrawShape();
                     cout << endl << endl;
                 }
                 getch();
-                system("CLS");
-                this->InterfaceTitle();
+                }
+                getch();
                 break;
          default:
                 cout << "\nPlease enter valid option from the menu";
          }
-
 }

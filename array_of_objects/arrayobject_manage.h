@@ -18,12 +18,13 @@
 #include<stdio.h>
 
 using namespace std;
-/*
+
+/**
  * Class CEmployee
  * A simple class which read employee details and prints employee details based on designation.
  * Author : Kiran Bal
  * Version : 1.0.0
- * Date : 05/07/2019
+ * Date : 09/07/2019
  *
  */
 
@@ -38,9 +39,9 @@ class CEmployee
     public:
         void ReadDetails();
         void DesignationRead();
-        friend void DisplayDetails( CEmployee *, int);
-        friend void SortByDesignation(int, CEmployee * );
+        void DisplayDetails( int );
+        int GetDesignationCode();
 };
-void UserInterface();
+//void UserInterface();
 
 #endif // EMPLOYEEDETAILS_MANAGE_H_INCLUDED

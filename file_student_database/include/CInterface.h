@@ -36,8 +36,8 @@ class CInterface
 
     public:
 
-        void UserInterface();
-        void UserInterface2();
+        void Title();
+        void Manager();
         void UserInterfaceMain();
 
 };

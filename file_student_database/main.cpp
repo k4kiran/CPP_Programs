@@ -18,22 +18,11 @@ using namespace std;
 
 int main()
 {
-  /*  //cout << "Hello world!" << endl;
-    ofstream outputfile("test.cpp");
 
-    int age;
-    age =23;
-    outputfile << age;
-    outputfile.close();
+    CInterface ManageFile1;
+    ManageFile1.Title();
+    ManageFile1.Manager();
 
 
-    ifstream inputfile("test.cpp");
-    inputfile >> age;
-    cout << age;
-
-*/
-    CInterface interface1;
-    interface1.UserInterface();
-    interface1.UserInterface2();
     return 0;
 }

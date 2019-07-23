@@ -1,0 +1,37 @@
+#ifndef INPUTVALIDATIONS_H_INCLUDED
+#define INPUTVALIDATIONS_H_INCLUDED
+
+class CValidateInput
+{
+    public:
+        double IntegerInputCheck( int input )
+        {
+        int input = 0;
+        bool valid= false;
+        do
+        {
+            //cout << "Enter a number: " ;
+            //cin >> input;
+            if (cin.good() && (input > -2,147,483,648 ) && (input < 2,147,483,647 ))
+            {
+
+                valid = true;
+            }
+            else
+            {
+
+                cin.clear();
+                //and empty it
+                cin.ignore(1000 ,'\n');
+                cout << "Invalid input; please re-enter." << endl;
+            }
+        } while (!valid);
+        cout << "\nvalid input";
+        return (input);
+        }
+
+
+};
+
+
+#endif // INPUTVALIDATIONS_H_INCLUDED

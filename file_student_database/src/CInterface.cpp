@@ -36,7 +36,7 @@ CInterface::~CInterface()
 // Description : Member function of class for user interface.
 // ---------------------------------------------------------------------------
 
-void CInterface::UserInterface()
+void CInterface::Title()
 {
     cout << "*********************STUDENT DATABASE*************************\n\n";
 }
@@ -48,7 +48,7 @@ void CInterface::UserInterface()
 // Description : Member function of class for user interface.
 // ---------------------------------------------------------------------------
 
-void CInterface::UserInterface2()
+void CInterface::Manager()
 {
     int nChoiceMainMenu;
     CStudentDetails student[MAXSTUDENT];

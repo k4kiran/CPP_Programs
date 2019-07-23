@@ -13,16 +13,17 @@
 #ifndef CSTUDENTDETAILS_H
 #define CSTUDENTDETAILS_H
 #include "CInterface.h"
+#define MAXLENGTH 20
 
 using namespace std;
 
 class CStudentDetails
 {
     private:
-        string m_szName;
-        string m_szGender;
-        string m_szCourse;
-        string m_szDateOfJoin;
+        char m_cName[MAXLENGTH];
+        char m_cGender[MAXLENGTH];
+        char m_cCourse[MAXLENGTH];
+        char m_cDateOfJoin[MAXLENGTH];
 
     public:
         void ReadDetails();

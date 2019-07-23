@@ -16,6 +16,6 @@
 int main()
 {
     CInterface ManageShapes;
-    ManageShapes.UserInterfaceMain();
+    ManageShapes.MainManageFunction();
 }
 

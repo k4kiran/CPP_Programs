@@ -13,43 +13,6 @@
 #include<string.h>
 #include "arrayobject_manage.h"
 
-// --------------------------------------------------------------------
-// Method      : SortByDesignation
-// Parameters  :
-//    <param 1> - <int> - total number of employee.
-//    <param 2> - <CEmployee> - object of class CEmployee.
-// Returns     : void
-// Description : function to sort employee by designation.
-// --------------------------------------------------------------------
-
-void SortByDesignation( /*IN*/ int nCountEmployee, /*IN*/ CEmployee *pEmployee2 )
-{
-    CEmployee TempObject;
-    for( int nCount = nCountEmployee -1;nCount > 0;nCount--)
-    {
-        for(int i = 0;i < nCountEmployee;i++ )
-        {
-            if( pEmployee2[i].m_nDesignationCode > pEmployee2[i +1].m_nDesignationCode )
-            {
-                TempObject = pEmployee2[i +1];
-                pEmployee2[i +1] = pEmployee2[i];
-                pEmployee2[i] = TempObject;
-            }
-            else
-            {
-                //unimplemented
-            }
-        }
-    }
-    //testing output
-    cout << "\n\n\n\n\t\t\t------------------------ EMPLOYEE DETAILS ----------------------------\n";
-    cout << "\n\n\n\t\t\tSl No\t\tNAME\t\tAGE\tSALARY\t\tDESIGNATION\n\n";
-    for( int i=0;i < nCountEmployee; i++)
-    {
-        DisplayDetails( pEmployee2, i );
-    }
-}
-
 // -------------------------------------------------------
 // Method      : ReadDetails
 // Parameters  : Nil
@@ -107,24 +70,31 @@ void CEmployee::ReadDetails()
         }
  }
 
-// -------------------------------------------------------
+// ----------------------------------------------------------
 // Method      : DisplayDetails
-// Parameters  :
-//    <param 1> - <CEmployee> - object of class CEmployee.
-//    <param 2> - <int> - Variavle to iterate through each employee.
+// Parameters  : Nil
 // Returns     : void
-// Description : Displays employee details
-// -------------------------------------------------------
+// Description : Member function to display employee details.
+// ----------------------------------------------------------
 
-void DisplayDetails( /*IN*/ CEmployee *pEmployee3, /*IN*/ int nIterate )
+void CEmployee::DisplayDetails( int nIterate )
 {
     cout <<"\t\t\t";
     cout << nIterate + 1 << "\t\t";
-    cout << pEmployee3[nIterate].m_szEmpName << "\t\t";
-    cout << pEmployee3[nIterate].m_nAge << "\t";
-    cout << pEmployee3[nIterate].m_nSalary << "\t\t";
-    cout << pEmployee3[nIterate].m_szDesignation << "\n";
+    cout << m_szEmpName << "\t\t";
+    cout << m_nAge << "\t";
+    cout << m_nSalary << "\t\t";
+    cout << m_szDesignation << "\n";
 }
 
+// ----------------------------------------------------------
+// Method      : GetDesignationCode
+// Parameters  : Nil
+// Returns     : void
+// Description : Member function to return designation code.
+// ----------------------------------------------------------
 
-
+int CEmployee::GetDesignationCode()
+{
+    return m_nDesignationCode;
+}

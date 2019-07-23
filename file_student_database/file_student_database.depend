@@ -1,18 +1,20 @@
 # depslib dependency file v1.0
-1563449699 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\main.cpp
+1563860122 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\main.cpp
 	"CInterface.h"
 
-1563520454 d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\include\cinterface.h
+1563860151 d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\include\cinterface.h
 	<iostream>
+	<fstream>
 	"CStudentDetails.h"
 
-1563528243 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\src\cinterface.cpp
+1563860197 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\src\cinterface.cpp
+	"CInterface.h"
+	<fstream>
+
+1563858084 d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\include\cstudentdetails.h
 	"CInterface.h"
 
-1563531612 d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\include\cstudentdetails.h
-	"CInterface.h"
-
-1563519305 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\src\cstudentdetails.cpp
+1563858229 source:d:\users\kiran_bal\work\git\triassic_solutions\file_student_database\src\cstudentdetails.cpp
 	"CStudentDetails.h"
 
 1563467548 source:d:\triassic_solutions\file_student_database\main.cpp

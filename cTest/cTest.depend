@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1563886037 source:c:\users\t0588\desktop\ctest\main.cpp
+	<iostream>
+	"InputValidations.h"
+
+1563886140 c:\users\t0588\desktop\ctest\inputvalidations.h
+
