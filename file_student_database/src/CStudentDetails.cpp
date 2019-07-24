@@ -32,6 +32,6 @@ void CStudentDetails::ReadDetails()
 
 void CStudentDetails::DisplayDetails()
 {
-    cout << "\n\n" << m_cRegisterNumber << "\t\t" << m_cName << "\t\t" << m_cGender << "\n\n" << m_cCourse << "\t\t" << m_cDateOfJoin;
+    cout << "\n\n" << m_cRegisterNumber << "\t\t\t" << m_cName << "\t\t" << m_cGender << "\t\t" << m_cCourse << "\t\t" << m_cDateOfJoin;
 }
 
