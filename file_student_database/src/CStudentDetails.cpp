@@ -35,3 +35,7 @@ void CStudentDetails::DisplayDetails()
     cout << "\n\n" << m_cRegisterNumber << "\t\t\t" << m_cName << "\t\t" << m_cGender << "\t\t" << m_cCourse << "\t\t" << m_cDateOfJoin;
 }
 
+char* CStudentDetails::GetRegistration()
+{
+    return m_cRegisterNumber;
+}

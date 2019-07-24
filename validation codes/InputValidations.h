@@ -4,7 +4,7 @@
 class CValidateInput()
 {
     public:
-        double IntegerInputCheck()
+        int IntegerInputCheck()
         {
         int input = 0;
         bool valid= false;

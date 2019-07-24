@@ -14,6 +14,7 @@
 #include "CInterface.h"
 #include<fstream>
 #include<string>
+#include<string.h>
 #include<stdlib.h>
 
 
@@ -116,7 +117,52 @@ void CInterface::Manager()
         }
     break;
 
-//    case2:
+    case 2:
+        int nUserChoice;
+        system("CLS");
+        cout << "1.View Details\n\n2.View Specific Details\n\n3.Back to main menu\n\n\nEnter your preferred choice (1,2,or3) : ";
+        cin >> nUserChoice;
+        switch(nUserChoice)
+        {
+        case 1:
+            system("CLS");
+            this->Title();
+            cout << "\n\n\nRegister Number\t\tName\t\tGender\t\tCourse\t\tDate of join\n";
+            readfile.open("studentdetails.dat",ios::in);
+            while( readfile.read((char *) &student, sizeof(student)))
+            {
+                student.DisplayDetails();
+            }
+            //student.DisplayDetails();
+            readfile.close();
+            break;
+
+        case 2:
+            char nRegistrationNumber[MAXLENGTH];
+            system("CLS");
+            this->Title();
+            cout << "\n\n\n" << string(40, ' ') << "Register Number: ";
+            cin >> nRegistrationNumber;
+
+            readfile.open("studentdetails.dat",ios::in);
+            while( readfile.read((char *) &student, sizeof(student)))
+            {
+                if(!(strcmp(student.GetRegistration(), nRegistrationNumber)))
+                {
+                    student.DisplayDetails();
+                }
+                //cout << "here" << student.GetRegistration();
+                //student.DisplayDetails();
+            }
+            //student.DisplayDetails();
+            readfile.close();
+            break;
+
+        default:
+            cout << "invalid input";
+
+        }
+        break;
     default:
         cout<< "invalid";
 

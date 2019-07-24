@@ -41,3 +41,25 @@
 	"CStudentDetails.h"
 	<stdlib.h>
 
+1563943523 source:d:\users\kiran_bal\work\git\cpp_programs\file_student_database\main.cpp
+	"CInterface.h"
+
+1563943523 d:\users\kiran_bal\work\git\cpp_programs\file_student_database\include\cinterface.h
+	<iostream>
+	<fstream>
+	"CStudentDetails.h"
+
+1563945506 d:\users\kiran_bal\work\git\cpp_programs\file_student_database\include\cstudentdetails.h
+	"CInterface.h"
+
+1563945712 source:d:\users\kiran_bal\work\git\cpp_programs\file_student_database\src\cinterface.cpp
+	"CInterface.h"
+	<fstream>
+	<string>
+	<string.h>
+	<stdlib.h>
+
+1563945481 source:d:\users\kiran_bal\work\git\cpp_programs\file_student_database\src\cstudentdetails.cpp
+	"CStudentDetails.h"
+	<stdlib.h>
+

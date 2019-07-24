@@ -29,6 +29,7 @@ class CStudentDetails
     public:
         void ReadDetails();
         void DisplayDetails();
+        char* GetRegistration();
        // void StoreDetails();
 };
 

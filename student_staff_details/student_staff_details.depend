@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1563969449 source:d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\main.cpp
+	"CManager.h"
+
+1563967972 d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\include\cmanager.h
+	<iostream>
+	<fstream>
+	"CStudent.h"
+
+1563962179 d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\include\cstudent.h
+	"CManager.h"
+
+1563971699 source:d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\src\cmanager.cpp
+	"CManager.h"
+	"CStudent.h"
+	"CStaff.h"
+	"CTeachStaff.h"
+
+1563961887 source:d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\src\cstudent.cpp
+	"CStudent.h"
+
+1563972013 source:d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\src\cstaff.cpp
+	"CStaff.h"
+
+1563972259 d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\include\cstaff.h
+	"CManager.h"
+
+1563972061 d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\include\cteachstaff.h
+	"CStaff.h"
+
+1563972067 source:d:\users\kiran_bal\work\git\cpp_programs\student_staff_details\src\cteachstaff.cpp
+	"CTeachStaff.h"
+
