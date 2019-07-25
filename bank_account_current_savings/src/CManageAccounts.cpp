@@ -7,23 +7,12 @@ CManageAccounts::CManageAccounts()
 
 void CManageAccounts::AccountsManager()
 {
-    float fBalanceAmount;
-    CBankAccount *Account1[MAXLENGTH];
-    CSavingsAccount savingsaccount1[MAXLENGTH];
-    CCurrentAccount currentaccount1[MAXLENGTH];
-    int nMainChoice,nChoiceAdminMenu;
-    int nContinueChoice;
-    int nIterateVariable = 0;
-    int nUserChoice;
-    string szAcNumber;
-    int nSelectedAccount;
-    float fNewBalance;
-    string szTypeAccount;
-    int nChoiceType;
+
     while(1)
     {
-         repeatMainMenu:
+        repeatMainMenu:
         this->MainMenu();
+        repeatinvalidmainmenu:
         cin >> nMainChoice;
         switch( nMainChoice )
         {
@@ -67,6 +56,7 @@ void CManageAccounts::AccountsManager()
 
                         //Account1[nIterateVariable]->DisplayDetails();
                         nIterateVariable++;
+                        getch();
                         goto repeatAdminMenu;
                         break;
 
@@ -85,7 +75,7 @@ void CManageAccounts::AccountsManager()
                         Account1[nIterateVariable]->AssignBalance(fNewBalance);
                         cout << "\n\n\n";
                         cout << string(40,' ') << "Data Stored Successfully.\n\n" << string(40,' ') << "Press any key to continue...\n\n\n";
-                        //add continue getchar;
+                        getch();
                        // Account1[nIterateVariable]->DisplayDetails();
                         nIterateVariable++;
                         goto repeatAdminMenu;
@@ -95,7 +85,7 @@ void CManageAccounts::AccountsManager()
                             break;
 
                     default:
-                        cout << string(40,' ') << "\nPlease enter your preferred option from Menu: ";
+                        cout << string(40,' ') << "\nPlease enter valid option from Menu: ";
                         goto repeat;
 
                     }
@@ -104,32 +94,53 @@ void CManageAccounts::AccountsManager()
 
                     break;
             case 2:
-                cout << "\nEnter new interest rate:";
+                this->Title();
+                cout << "\n\n\n\n\n\n\n";
+                cout <<  string(40,' ') << "Enter new interest rate:";
                 float fNewInterest;
                 cin >> fNewInterest;
                 //check here make it static
                 savingsaccount1[1].SetInterest(fNewInterest);
+                cout << "\n\n\n\n" << string(40,' ') << "Interest rate changed successfully";
+                cout << "\n\n\n" <<string(40, ' ') << "Press any key to continue...";
+                getch();
+                goto repeatAdminMenu;
                 break;
+
             case 3:
                 int nNewFee;
-                cout << "\nenter new fine amount:";
+                this->Title();
+                cout << "\n\n\n\n\n\n\n";
+                cout <<  string(40,' ') << "enter new fine amount:";
                 cin >> nNewFee;
                 //check here
                 currentaccount1[1].UpdateFee( nNewFee );
+                cout << "\n\n\n\n" << string(40,' ') << "Fine amount updated successfully";
+                cout << "\n\n\n" <<string(40, ' ') << "Press any key to continue...";
+                getch();
+                goto repeatAdminMenu;
                 break;
+
             case 4:
-                cout << "\nprinting Details";
+                system("CLS");
+                this->Title();
+
+                cout << "\n\n\n\n\n" << string(40,' ') << "Account deatails" <<"\n\n\n";
+                cout << "\n\n" << string(10,' ') << "Name" << "\t\t" << "Age" << "\t\t" << "Account Number" << "\t\t\t" << "Account Type" << "\t\t" << "Balance";
                 for( int i = 0;i < nIterateVariable;i++)
                 {
                     Account1[i]->DisplayDetails();
                 }
+                cout << "\n\n\n\n" << string(30, ' ') << "Press any key to contiue...";
+                getch();
+                goto repeatAdminMenu;
                 break;
 
             case 5:goto repeatMainMenu;
             break;
-            default:
 
-                cout <<"Pleaase enter  preferred choice from the menu: ";
+            default:
+                cout <<"Pleaase enter  valid choice from the menu: ";
                 goto returnMenu;
             }
 
@@ -141,6 +152,7 @@ void CManageAccounts::AccountsManager()
             this->Title();
             cout << "\n\n\n\n\n";
             cout << string(40, ' ') << "Enter your Account Number:";
+            repeatuser:
             cin >> szAcNumber;
             for (int i =0 ;i < nIterateVariable;i++)
             {
@@ -158,16 +170,19 @@ void CManageAccounts::AccountsManager()
 
             if(nAcNOCheckFlag == 0 )
             {
-                cout << "Not found";
+                cout << "\n\n\n" << string(40,' ') << "Account Not found please try again";
+                getch();
+                goto repeatuser;
             }
             else
             {
             system( "CLS" );
             this->Title();
             //add formatting
-            cout << "\n1.Deposit\n2.Withdraw\n3.View Balance";
+            cout << "\n\n\n\n" << string(40,' ') << "1.Deposit\n\n" << string(40,' ') << "2.Withdraw\n\n" << string(40, ' ') << "3.iew Balance\n\n" << string(40, ' ') << "4.Back to menu";
+            cout << "\n\n\n" << string(40,' ') << "Enter your preferred choice from Menu (1,2,3 or 4) : ";
+            transactionmenu:
             cin >> nUserChoice;
-
             switch(nUserChoice)
             {
             case 1:
@@ -183,19 +198,19 @@ void CManageAccounts::AccountsManager()
                 Account1[nSelectedAccount]->DepositCash( fNewAmount );
                 break;
             case 2:
-                cout << "\nEnter the withdraw amount: ";
+                cout << "\n\n\n\n\n" << string(40, ' ') << "Enter the withdraw amount: ";
                 cin >>fNewAmount;
                 Account1[nSelectedAccount]->WithdrawCash( fNewAmount );
                 break;
 
             case 3:
 
-                cout << "Balance is " << Account1[nSelectedAccount]->GetBalance();
+                cout << "\n\n\n\n\n" << string(40, ' ') << "Current Balance : " << Account1[nSelectedAccount]->GetBalance();
                 break;
 
-
-
-            default:cout << "Please enter valid option from menu: ";
+            default:
+                cout << string(40, ' ') << "Please enter valid option from menu: ";
+                goto transactionmenu;
 
             }
             }
@@ -206,7 +221,10 @@ void CManageAccounts::AccountsManager()
         cout << "\nExiting the program";
                 exit(0);
                 break;
-    default: cout<<"please Enter Valid option from menu:";
+
+    default:
+        cout<<"please Enter Valid option from menu:";
+        goto repeatinvalidmainmenu;
     }
 }
 }

@@ -67,3 +67,42 @@
 	"CSavingsAccount_manage.h"
 	<stdio.h>
 
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\cbankaccount_manage.cpp
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	"CBankAccount_manage.h"
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_class\cbankaccount_manage.h
+	<iostream>
+	<conio.h>
+	<stdlib.h>
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\ccurrentaccount_manage.cpp
+	"CCurrentAccount_manage.h"
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_class\ccurrentaccount_manage.h
+	"CBankAccount_manage.h"
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\cinterface.cpp
+	"CInterface.h"
+	"CSavingsAccount_manage.h"
+	<stdio.h>
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_class\cinterface.h
+	"CBankAccount_manage.h"
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_class\csavingsaccount_manage.h
+	"CBankAccount_manage.h"
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\cinterface_manage.cpp
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\csavingsaccount_manage.cpp
+	"CSavingsAccount_manage.h"
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_class\main.cpp
+	"CBankAccount_manage.h"
+	"CSavingsAccount_manage.h"
+	"CCurrentAccount_manage.h"
+	"CInterface.h"
+

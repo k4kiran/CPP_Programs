@@ -83,3 +83,37 @@
 1563812174 source:d:\triassic_solutions\bank_account_current_savings\src\csavingsaccount.cpp
 	"CSavingsAccount.h"
 
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_current_savings\main.cpp
+	<iostream>
+	"CManageAccounts.h"
+
+1564017442 d:\triassic solutions\cpp_programs\bank_account_current_savings\include\cmanageaccounts.h
+	"CBankAccount.h"
+	"CSavingsAccount.h"
+	"CCurrentAccount.h"
+	<stdlib.h>
+	<string>
+	<conio.h>
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_current_savings\include\cbankaccount.h
+	<iostream>
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_current_savings\include\csavingsaccount.h
+	"CBankAccount.h"
+
+1563990142 d:\triassic solutions\cpp_programs\bank_account_current_savings\include\ccurrentaccount.h
+	"CBankAccount.h"
+
+1564018986 source:d:\triassic solutions\cpp_programs\bank_account_current_savings\src\cbankaccount.cpp
+	"CBankAccount.h"
+	<iostream>
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_current_savings\src\ccurrentaccount.cpp
+	"CCurrentAccount.h"
+
+1564018813 source:d:\triassic solutions\cpp_programs\bank_account_current_savings\src\cmanageaccounts.cpp
+	"CManageAccounts.h"
+
+1563990142 source:d:\triassic solutions\cpp_programs\bank_account_current_savings\src\csavingsaccount.cpp
+	"CSavingsAccount.h"
+

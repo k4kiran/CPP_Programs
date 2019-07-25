@@ -1,8 +1,9 @@
-#include "CTeachStaff.h"
+#include "CNonTeachStaff.h"
 
-void CTeachStaff::StaffReadDetails()
+
+void CNonTeachStaff::StaffReadDetails()
 {
-    cout<<"\n teaching";
+    cout << "\nNon teaching";
     cout << "\n\n" << string(40, ' ') << "Staff ID: ";
     cin >> m_cStaffId;
     cout << "\n\n" << string(40, ' ') << "Name: ";
@@ -18,7 +19,7 @@ void CTeachStaff::StaffReadDetails()
 }
 
 
-void CTeachStaff::StaffDisplayDetails()
+void CNonTeachStaff::StaffDisplayDetails()
 {
     cout << m_cStaffId << "\t\t" << m_cStaffName << "\t\t" << m_cStaffGender << "\t\t" << m_cDepartment << "\t\t" << m_cStaffDateOfJoin << "\t\t" << m_nSalary;
 }

@@ -63,3 +63,26 @@
 	"CStudentDetails.h"
 	<stdlib.h>
 
+1563990142 source:d:\triassic solutions\cpp_programs\file_student_database\main.cpp
+	"CInterface.h"
+
+1564020890 d:\triassic solutions\cpp_programs\file_student_database\include\cinterface.h
+	<iostream>
+	<fstream>
+	<conio.h>
+	"CStudentDetails.h"
+
+1563990142 d:\triassic solutions\cpp_programs\file_student_database\include\cstudentdetails.h
+	"CInterface.h"
+
+1563990142 source:d:\triassic solutions\cpp_programs\file_student_database\src\cinterface.cpp
+	"CInterface.h"
+	<fstream>
+	<string>
+	<string.h>
+	<stdlib.h>
+
+1563990142 source:d:\triassic solutions\cpp_programs\file_student_database\src\cstudentdetails.cpp
+	"CStudentDetails.h"
+	<stdlib.h>
+

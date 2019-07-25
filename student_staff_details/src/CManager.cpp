@@ -2,6 +2,7 @@
 #include "CStudent.h"
 #include "CStaff.h"
 #include "CTeachStaff.h"
+#include "CNonTeachStaff.h"
 
 CManager::CManager()
 {
@@ -30,9 +31,11 @@ void CManager::ManagerStudent()
 void CManager::ManagerStaff()
 {
     //cant create object change to derived
-    CTeachStaff staff;
-    staff.StaffReadDetails();
-    staff.StaffDisplayDetails();
+    CStaff *staff;
+    staff = new CNonTeachStaff;
+
+    staff->StaffReadDetails();
+    staff->StaffDisplayDetails();
 
     ofstream storefile;
     storefile.open("staffdata.dat", ios::app);

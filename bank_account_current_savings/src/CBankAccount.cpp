@@ -78,10 +78,13 @@ void CBankAccount::AddDetails()
 
 void CBankAccount::DisplayDetails()
 {
-    cout << "\nName :"<<m_szUserName;
+    /*cout << "\nName :"<<m_szUserName;
     cout << "\nAge :"<<m_nAge;
     cout << "\nAccount Number "<<m_szAccountNumber;
     cout << "\nType:"<<m_szAccountType;
+    */
+
+    cout << "\n\n" << string(10, ' ') << m_szUserName << "\t\t" << m_nAge << "\t\t" << m_szAccountNumber << "\t\t" << m_szAccountType << "\t\t" << fAccountBalance;
 
 }
 string CBankAccount::GetAccountNumber()

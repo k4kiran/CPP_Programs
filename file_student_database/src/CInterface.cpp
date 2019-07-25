@@ -18,20 +18,6 @@
 #include<stdlib.h>
 
 
-
-/*
-CInterface::CInterface()
-{
-    //ctor
-}
-
-CInterface::~CInterface()
-{
-    //dtor
-}
-*/
-
-
 // ---------------------------------------------------------------------------
 // Method      : UserInterface
 // Parameters  : Nil
@@ -66,6 +52,7 @@ void CInterface::Manager()
     switch(nChoiceUserMenu)
     {
     case 1:
+        adminmenu:
         system("CLS");
         this->Title();
         cout << "\n\n\n\n\n";
@@ -73,6 +60,7 @@ void CInterface::Manager()
         cout << string(40,' ') << "2.View Details\n\n";
         cout << string(40,' ') << "3.Exit\n\n";
         cout << string(40,' ') << "Please Enter your preferred choice from menu (enter 1,2 or 3): ";
+        adminenter:
         cin >> nChoiceMainMenu;
 
         switch( nChoiceMainMenu )
@@ -93,7 +81,10 @@ void CInterface::Manager()
             cout << "\n\n\n" << string(40,' ') << "Do  you want to add one more?(1/0)";
 
             cin>>onemore;
-            i++;
+            if(onemore == 0 )
+            {
+                goto adminmenu;
+            }
             }while(onemore==1);
 
             break;
@@ -109,10 +100,19 @@ void CInterface::Manager()
             }
             //student.DisplayDetails();
             readfile.close();
+            cout << "\n\n\n" << string(40, ' ') << "Press any key to contiue...";
+            getch();
+            goto adminmenu;
+            break;
+
+        case 3:
+            cout << "\n\n\n" << string(40,' ') << "Exiting the program";
+            goto adminmenu;
             break;
 
         default:
-            cout << "Invalid char";
+            cout << "\n\n\n\n" << string(40, ' ') << "Please enter valid option from menu : ";
+            goto adminenter;
 
         }
     break;

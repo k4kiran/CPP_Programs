@@ -6,6 +6,7 @@
 #include "CCurrentAccount.h"
 #include <stdlib.h>
 #include <string>
+#include <conio.h>
 
 class CManageAccounts
 {
@@ -22,6 +23,19 @@ class CManageAccounts
     protected:
 
     private:
+        float fBalanceAmount;
+        CBankAccount *Account1[MAXLENGTH];
+        CSavingsAccount savingsaccount1[MAXLENGTH];
+        CCurrentAccount currentaccount1[MAXLENGTH];
+        int nMainChoice,nChoiceAdminMenu;
+        int nContinueChoice;
+        int nIterateVariable = 0;
+        int nUserChoice;
+        string szAcNumber;
+        int nSelectedAccount;
+        float fNewBalance;
+        string szTypeAccount;
+        int nChoiceType;
 };
 
 #endif // CMANAGEACCOUNTS_H
