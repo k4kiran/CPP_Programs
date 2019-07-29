@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1564142469 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\cmanager.cpp
+	"CManager.h"
+
+1564137617 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\cmanager.h
+	<iostream>
+	<stdlib.h>
+	"CProduct.h"
+	"CFoodProduct.h"
+	"CHouseProduct.h"
+	"CAdmin.h"
+
+1564139875 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\main.cpp
+	<iostream>
+	"CManager.h"
+
+1564133860 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\cproduct.h
+	<iostream>
+	<string>
+	"CValid.h"
+	<conio.h>
+
+1564141611 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\cproduct.cpp
+	"CProduct.h"
+
+1564140682 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\cvalid.cpp
+	"CValid.h"
+
+1564140367 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\cvalid.h
+	<iostream>
+	<fstream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<math.h>
+	<string.h>
+	<ctype.h>
+	<conio.h>
+	<iomanip>
+	<string>
+
+1564141531 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\cfoodproduct.cpp
+	"CFoodProduct.h"
+
+1564141574 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\cfoodproduct.h
+	"CProduct.h"
+
+1564135789 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\chouseproduct.h
+	"CProduct.h"
+
+1564125724 d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\include\cadmin.h
+	"CFoodProduct.h"
+	"CHouseProduct.h"
+	"CProduct.h"
+
+1564126148 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\cadmin.cpp
+	"CAdmin.h"
+
+1564141477 source:d:\users\kiran_bal\work\git\t0588\cpp\programs\cppevaluation\billing_software_system\src\chouseproduct.cpp
+	"CHouseProduct.h"
+
